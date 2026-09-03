@@ -7,7 +7,8 @@
       "date": "2025-10-10",
       "type": "single",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/9b15dbf6-ef53-4786-af05-260ea0448051"
+      "mbUrl": "https://musicbrainz.org/release-group/9b15dbf6-ef53-4786-af05-260ea0448051",
+      "hasCover": true
     },
     {
       "id": "089dc84e-43a3-4ac6-8082-39ec0d4b3dbd",
@@ -15,7 +16,8 @@
       "date": "2024-09-06",
       "type": "single",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/089dc84e-43a3-4ac6-8082-39ec0d4b3dbd"
+      "mbUrl": "https://musicbrainz.org/release-group/089dc84e-43a3-4ac6-8082-39ec0d4b3dbd",
+      "hasCover": true
     },
     {
       "id": "3406ab55-573e-409e-9b76-8f81dc3767c9",
@@ -23,7 +25,8 @@
       "date": "2023-02-03",
       "type": "single",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/3406ab55-573e-409e-9b76-8f81dc3767c9"
+      "mbUrl": "https://musicbrainz.org/release-group/3406ab55-573e-409e-9b76-8f81dc3767c9",
+      "hasCover": true
     },
     {
       "id": "f6435045-4995-498c-b33f-60fd0abad753",
@@ -31,7 +34,8 @@
       "date": "2022-03-18",
       "type": "single",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/f6435045-4995-498c-b33f-60fd0abad753"
+      "mbUrl": "https://musicbrainz.org/release-group/f6435045-4995-498c-b33f-60fd0abad753",
+      "hasCover": true
     },
     {
       "id": "0c13b463-d6b2-4c4c-85de-6094db49498f",
@@ -39,7 +43,8 @@
       "date": "2021-03-26",
       "type": "ep",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/0c13b463-d6b2-4c4c-85de-6094db49498f"
+      "mbUrl": "https://musicbrainz.org/release-group/0c13b463-d6b2-4c4c-85de-6094db49498f",
+      "hasCover": true
     },
     {
       "id": "724204a6-ef07-4f61-9fd6-fa5aaa7bad85",
@@ -47,7 +52,8 @@
       "date": "2020-09-18",
       "type": "single",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/724204a6-ef07-4f61-9fd6-fa5aaa7bad85"
+      "mbUrl": "https://musicbrainz.org/release-group/724204a6-ef07-4f61-9fd6-fa5aaa7bad85",
+      "hasCover": true
     },
     {
       "id": "9951a168-6d85-46d6-a122-0398b86d8cb1",
@@ -55,7 +61,8 @@
       "date": "2020-03-20",
       "type": "ep",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/9951a168-6d85-46d6-a122-0398b86d8cb1"
+      "mbUrl": "https://musicbrainz.org/release-group/9951a168-6d85-46d6-a122-0398b86d8cb1",
+      "hasCover": true
     },
     {
       "id": "2d7587ed-c6f9-4691-8355-f054165371e2",
@@ -63,7 +70,8 @@
       "date": "2019-11-01",
       "type": "ep",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/2d7587ed-c6f9-4691-8355-f054165371e2"
+      "mbUrl": "https://musicbrainz.org/release-group/2d7587ed-c6f9-4691-8355-f054165371e2",
+      "hasCover": true
     },
     {
       "id": "4a437c49-58d4-49a0-8a78-8333d8569a9b",
@@ -71,7 +79,8 @@
       "date": "2019-08-09",
       "type": "ep",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/4a437c49-58d4-49a0-8a78-8333d8569a9b"
+      "mbUrl": "https://musicbrainz.org/release-group/4a437c49-58d4-49a0-8a78-8333d8569a9b",
+      "hasCover": true
     },
     {
       "id": "133007c7-3cc5-458e-8b6c-40009523233b",
@@ -79,7 +88,8 @@
       "date": "2019-05-31",
       "type": "ep",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/133007c7-3cc5-458e-8b6c-40009523233b"
+      "mbUrl": "https://musicbrainz.org/release-group/133007c7-3cc5-458e-8b6c-40009523233b",
+      "hasCover": true
     },
     {
       "id": "dcefc949-018b-4697-8913-5a9324d3eaab",
@@ -87,7 +97,8 @@
       "date": "2019-04-26",
       "type": "ep",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/dcefc949-018b-4697-8913-5a9324d3eaab"
+      "mbUrl": "https://musicbrainz.org/release-group/dcefc949-018b-4697-8913-5a9324d3eaab",
+      "hasCover": true
     },
     {
       "id": "a840a2b2-e01b-4fe1-b277-9bcb867bb753",
@@ -95,7 +106,8 @@
       "date": "2019-03-15",
       "type": "ep",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/a840a2b2-e01b-4fe1-b277-9bcb867bb753"
+      "mbUrl": "https://musicbrainz.org/release-group/a840a2b2-e01b-4fe1-b277-9bcb867bb753",
+      "hasCover": true
     },
     {
       "id": "efd55af2-d0af-4ef9-84c1-22da9a693c1d",
@@ -103,7 +115,8 @@
       "date": "2018-12-14",
       "type": "ep",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/efd55af2-d0af-4ef9-84c1-22da9a693c1d"
+      "mbUrl": "https://musicbrainz.org/release-group/efd55af2-d0af-4ef9-84c1-22da9a693c1d",
+      "hasCover": true
     },
     {
       "id": "dd315fce-51e0-44c4-b898-11f90c455c49",
@@ -111,7 +124,8 @@
       "date": "2018-10-12",
       "type": "single",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/dd315fce-51e0-44c4-b898-11f90c455c49"
+      "mbUrl": "https://musicbrainz.org/release-group/dd315fce-51e0-44c4-b898-11f90c455c49",
+      "hasCover": true
     },
     {
       "id": "3affcd7f-7214-4fbb-a709-42332aac8a21",
@@ -119,7 +133,8 @@
       "date": "2018-09-07",
       "type": "ep",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/3affcd7f-7214-4fbb-a709-42332aac8a21"
+      "mbUrl": "https://musicbrainz.org/release-group/3affcd7f-7214-4fbb-a709-42332aac8a21",
+      "hasCover": true
     },
     {
       "id": "cb6a7d07-8d53-4a91-b9a1-52775646ccf1",
@@ -127,7 +142,8 @@
       "date": "2018-04-06",
       "type": "single",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/cb6a7d07-8d53-4a91-b9a1-52775646ccf1"
+      "mbUrl": "https://musicbrainz.org/release-group/cb6a7d07-8d53-4a91-b9a1-52775646ccf1",
+      "hasCover": true
     },
     {
       "id": "9c02a1f7-754c-4a70-bbd4-3cd4a6518d01",
@@ -135,7 +151,8 @@
       "date": "2018-03-09",
       "type": "ep",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/9c02a1f7-754c-4a70-bbd4-3cd4a6518d01"
+      "mbUrl": "https://musicbrainz.org/release-group/9c02a1f7-754c-4a70-bbd4-3cd4a6518d01",
+      "hasCover": true
     },
     {
       "id": "c5a5b87e-cbcd-4450-85a0-e59875d25cdc",
@@ -143,7 +160,8 @@
       "date": "2018-02-09",
       "type": "single",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/c5a5b87e-cbcd-4450-85a0-e59875d25cdc"
+      "mbUrl": "https://musicbrainz.org/release-group/c5a5b87e-cbcd-4450-85a0-e59875d25cdc",
+      "hasCover": true
     },
     {
       "id": "914a97fa-0d3b-4e31-b831-b245a88e7f6f",
@@ -151,7 +169,8 @@
       "date": "2018-01-29",
       "type": "ep",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/914a97fa-0d3b-4e31-b831-b245a88e7f6f"
+      "mbUrl": "https://musicbrainz.org/release-group/914a97fa-0d3b-4e31-b831-b245a88e7f6f",
+      "hasCover": true
     },
     {
       "id": "537b6b00-4eac-4daf-a106-77aa1b0e3ed5",
@@ -159,7 +178,8 @@
       "date": "2017-11-03",
       "type": "ep",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/537b6b00-4eac-4daf-a106-77aa1b0e3ed5"
+      "mbUrl": "https://musicbrainz.org/release-group/537b6b00-4eac-4daf-a106-77aa1b0e3ed5",
+      "hasCover": true
     },
     {
       "id": "f2cb6178-28dd-4210-ac7f-27f4fe62b6ce",
@@ -167,7 +187,8 @@
       "date": "2017-10-06",
       "type": "single",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/f2cb6178-28dd-4210-ac7f-27f4fe62b6ce"
+      "mbUrl": "https://musicbrainz.org/release-group/f2cb6178-28dd-4210-ac7f-27f4fe62b6ce",
+      "hasCover": true
     },
     {
       "id": "c2ebab72-fc64-4efc-a76d-a3b9d23a6579",
@@ -175,7 +196,8 @@
       "date": "2017-10-02",
       "type": "ep",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/c2ebab72-fc64-4efc-a76d-a3b9d23a6579"
+      "mbUrl": "https://musicbrainz.org/release-group/c2ebab72-fc64-4efc-a76d-a3b9d23a6579",
+      "hasCover": true
     },
     {
       "id": "37faed09-81a4-4394-94ff-46dd7bd11b7a",
@@ -183,7 +205,8 @@
       "date": "2017-07-24",
       "type": "ep",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/37faed09-81a4-4394-94ff-46dd7bd11b7a"
+      "mbUrl": "https://musicbrainz.org/release-group/37faed09-81a4-4394-94ff-46dd7bd11b7a",
+      "hasCover": true
     },
     {
       "id": "84f091cf-4d9f-402e-a38f-a11980369d63",
@@ -191,7 +214,8 @@
       "date": "2017-06-30",
       "type": "ep",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/84f091cf-4d9f-402e-a38f-a11980369d63"
+      "mbUrl": "https://musicbrainz.org/release-group/84f091cf-4d9f-402e-a38f-a11980369d63",
+      "hasCover": true
     },
     {
       "id": "4b1ea3b2-7791-4b94-975b-07d56e087305",
@@ -199,7 +223,8 @@
       "date": "2017-05-05",
       "type": "ep",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/4b1ea3b2-7791-4b94-975b-07d56e087305"
+      "mbUrl": "https://musicbrainz.org/release-group/4b1ea3b2-7791-4b94-975b-07d56e087305",
+      "hasCover": true
     },
     {
       "id": "f99f421c-c7a7-4f63-9b04-4a113163c168",
@@ -207,7 +232,8 @@
       "date": "2016-11-04",
       "type": "ep",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/f99f421c-c7a7-4f63-9b04-4a113163c168"
+      "mbUrl": "https://musicbrainz.org/release-group/f99f421c-c7a7-4f63-9b04-4a113163c168",
+      "hasCover": true
     },
     {
       "id": "a1a022ab-7152-4a58-b830-2dba104c3c10",
@@ -215,7 +241,8 @@
       "date": "2016-09-30",
       "type": "single",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/a1a022ab-7152-4a58-b830-2dba104c3c10"
+      "mbUrl": "https://musicbrainz.org/release-group/a1a022ab-7152-4a58-b830-2dba104c3c10",
+      "hasCover": true
     },
     {
       "id": "0ef0008a-0d01-4783-aad3-d0386b94edb1",
@@ -223,7 +250,8 @@
       "date": "2016-06-13",
       "type": "single",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/0ef0008a-0d01-4783-aad3-d0386b94edb1"
+      "mbUrl": "https://musicbrainz.org/release-group/0ef0008a-0d01-4783-aad3-d0386b94edb1",
+      "hasCover": true
     },
     {
       "id": "31d7992a-235d-48f2-8eeb-739a8340d71c",
@@ -231,7 +259,8 @@
       "date": "2016-02-22",
       "type": "ep",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/31d7992a-235d-48f2-8eeb-739a8340d71c"
+      "mbUrl": "https://musicbrainz.org/release-group/31d7992a-235d-48f2-8eeb-739a8340d71c",
+      "hasCover": true
     },
     {
       "id": "122be324-4015-4070-96dc-62c72d7bd8ea",
@@ -239,7 +268,8 @@
       "date": "2015-07-20",
       "type": "single",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/122be324-4015-4070-96dc-62c72d7bd8ea"
+      "mbUrl": "https://musicbrainz.org/release-group/122be324-4015-4070-96dc-62c72d7bd8ea",
+      "hasCover": true
     },
     {
       "id": "86cf1aee-61f3-43b9-bbf2-ba6627f16d0e",
@@ -247,7 +277,8 @@
       "date": "2015-05-25",
       "type": "single",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/86cf1aee-61f3-43b9-bbf2-ba6627f16d0e"
+      "mbUrl": "https://musicbrainz.org/release-group/86cf1aee-61f3-43b9-bbf2-ba6627f16d0e",
+      "hasCover": true
     },
     {
       "id": "b1787a87-d0c7-4450-8530-f1436e15322d",
@@ -255,7 +286,8 @@
       "date": "2014-09-05",
       "type": "single",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/b1787a87-d0c7-4450-8530-f1436e15322d"
+      "mbUrl": "https://musicbrainz.org/release-group/b1787a87-d0c7-4450-8530-f1436e15322d",
+      "hasCover": true
     },
     {
       "id": "40f79266-ce95-47f9-a7da-816d80b67639",
@@ -263,7 +295,8 @@
       "date": "2014-09-01",
       "type": "album",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/40f79266-ce95-47f9-a7da-816d80b67639"
+      "mbUrl": "https://musicbrainz.org/release-group/40f79266-ce95-47f9-a7da-816d80b67639",
+      "hasCover": true
     },
     {
       "id": "bda54218-38a5-46d8-be0d-89d88b5e2da0",
@@ -271,7 +304,8 @@
       "date": "2014-07-20",
       "type": "single",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/bda54218-38a5-46d8-be0d-89d88b5e2da0"
+      "mbUrl": "https://musicbrainz.org/release-group/bda54218-38a5-46d8-be0d-89d88b5e2da0",
+      "hasCover": true
     },
     {
       "id": "96104a50-b2c1-4b87-bc8a-dfbd830f7a75",
@@ -279,7 +313,8 @@
       "date": "2013-12-06",
       "type": "ep",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/96104a50-b2c1-4b87-bc8a-dfbd830f7a75"
+      "mbUrl": "https://musicbrainz.org/release-group/96104a50-b2c1-4b87-bc8a-dfbd830f7a75",
+      "hasCover": true
     },
     {
       "id": "8e6ccd0f-9105-4b6f-abc1-43415ddca69c",
@@ -287,7 +322,8 @@
       "date": "2013-08-02",
       "type": "album",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/8e6ccd0f-9105-4b6f-abc1-43415ddca69c"
+      "mbUrl": "https://musicbrainz.org/release-group/8e6ccd0f-9105-4b6f-abc1-43415ddca69c",
+      "hasCover": true
     },
     {
       "id": "b85638b8-1340-4391-b020-71745447df63",
@@ -295,7 +331,8 @@
       "date": "2013-05-17",
       "type": "single",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/b85638b8-1340-4391-b020-71745447df63"
+      "mbUrl": "https://musicbrainz.org/release-group/b85638b8-1340-4391-b020-71745447df63",
+      "hasCover": true
     },
     {
       "id": "9935ed31-ba5d-48f6-873e-90aa5eb41ab6",
@@ -303,7 +340,8 @@
       "date": "2013-01-18",
       "type": "ep",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/9935ed31-ba5d-48f6-873e-90aa5eb41ab6"
+      "mbUrl": "https://musicbrainz.org/release-group/9935ed31-ba5d-48f6-873e-90aa5eb41ab6",
+      "hasCover": true
     },
     {
       "id": "0f7ba8bd-afb2-4775-b2f9-b08c8289903c",
@@ -311,7 +349,8 @@
       "date": "2012-12",
       "type": "ep",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/0f7ba8bd-afb2-4775-b2f9-b08c8289903c"
+      "mbUrl": "https://musicbrainz.org/release-group/0f7ba8bd-afb2-4775-b2f9-b08c8289903c",
+      "hasCover": true
     },
     {
       "id": "cc283f00-8152-4160-9425-1ddf566a71dc",
@@ -319,7 +358,8 @@
       "date": "2012-09-27",
       "type": "single",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/cc283f00-8152-4160-9425-1ddf566a71dc"
+      "mbUrl": "https://musicbrainz.org/release-group/cc283f00-8152-4160-9425-1ddf566a71dc",
+      "hasCover": true
     },
     {
       "id": "aed7ebaa-f404-471c-bf05-a0c16ee9874c",
@@ -327,7 +367,8 @@
       "date": "2012-09-13",
       "type": "ep",
       "secondaryTypes": [],
-      "mbUrl": "https://musicbrainz.org/release-group/aed7ebaa-f404-471c-bf05-a0c16ee9874c"
+      "mbUrl": "https://musicbrainz.org/release-group/aed7ebaa-f404-471c-bf05-a0c16ee9874c",
+      "hasCover": true
     }
   ]
 }
