@@ -1,0 +1,15 @@
+/.env
+/node_modules
+/dist
+/build
+/public
+/src
+/test
+/types
+/utils
+/scripts
+/config
+/docs
+/examples
+/.nuxt
+**.d.ts
