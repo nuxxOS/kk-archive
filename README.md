@@ -32,6 +32,8 @@ Upcoming/All-time/Year filter, zoom buttons) · /music · /stats · /sets · /id
 - `scripts/build-land-dots.mjs` — dot-matrix landmass for the globe (globe.gl polygon layers
   silently fail here — points/sprites only, and keep object identities STABLE or labels flicker)
 - `scripts/sync-releases.mjs` — MusicBrainz discography (retries 503s)
+- `scripts/sync-covers.mjs` — Cover Art Archive front covers → public/covers/{id}.jpg + hasCover
+  flag (run after sync-releases; all 41 have art as of 2026-09-03)
 - `scripts/build-ics.mjs` — public/klangkuenstler-tour.ics
 - `scripts/post-new-shows.mjs` — Telegram channel poster (needs TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID)
 - `scripts/import-setlistfm.mjs` — optional now (RA history made it mostly redundant)
@@ -74,6 +76,12 @@ lesson from v0 stands). Order matters: launch basics → sets → IDs → integr
 3. OG share image (site-wide card, then per-show).
 4. ~~Data hygiene~~ DONE 2026-09-03 (see Data notes) — only the listed ambiguous same-date
    pairs remain open, plus the 2026-05-15 DC/Vegas pair to verify closer to the date.
-5. Launch decisions: neutral domain (nothing containing "outworld"/"klangkuenstler"), Vercel
-   deploy, analytics, hide-or-fill sample Sets/IDs.
+5. Launch decisions (updated 2026-09-03): neutral domain (nothing containing
+   "outworld"/"klangkuenstler"), Vercel deploy, analytics. LAUNCH SHAPE DECIDED: Sets SHIPS
+   with launch (real librosa-analyzed sets — concept approved, see the Set Anatomy artifact:
+   fingerprint coil w/ flat/coil toggle + SVG anatomy + pipeline; build next). ID Hunter
+   PARKED: hidden behind FEATURES.idHunter=false in utils/archive.ts (nav auto-renumbers, home
+   section/tile/CTA swapped, set-page related-IDs gated; /ids stays routable, unlinked).
+   /music reworked: cover-art grid + era grouping (Beginnings / SvT / Outworld) +
+   latest-release hero.
 6. Later: German i18n; promoter watchlist probes (Rotterdam Rave, Awakenings, Verknipt).
