@@ -1,5 +1,14 @@
 <script setup lang="ts">
-const { upcomingShows, pastShows } = useArchive()
+const { upcomingShows, pastShows, nextShow } = useArchive()
+
+const laterShows = upcomingShows.slice(1)
+
+const UPCOMING_PREVIEW_COUNT = 6
+const isUpcomingExpanded = ref(false)
+const visibleUpcoming = computed(() =>
+  isUpcomingExpanded.value ? laterShows : laterShows.slice(0, UPCOMING_PREVIEW_COUNT),
+)
+const hiddenUpcomingCount = laterShows.length - UPCOMING_PREVIEW_COUNT
 
 useHead({ title: 'Shows — KK Fan Hub' })
 
@@ -28,6 +37,18 @@ function toggleYear(year: string) {
   }
   openYears.value = next
 }
+
+// timeline: bars oldest → newest, heights relative to the busiest year
+const yearBars = [...pastByYear].reverse()
+const maxYearCount = Math.max(...yearBars.map((g) => g.shows.length))
+
+async function jumpToYear(year: string) {
+  if (!openYears.value.has(year)) {
+    openYears.value = new Set(openYears.value).add(year)
+  }
+  await nextTick()
+  document.getElementById(`year-${year}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
 </script>
 
 <template>
@@ -44,12 +65,24 @@ function toggleYear(year: string) {
       </div>
     </header>
 
+    <NextShowHero v-if="nextShow" :show="nextShow" />
+
     <section class="glass panel">
-      <div class="section-title"><h2>Upcoming</h2></div>
-      <template v-if="upcomingShows.length">
-        <ShowRow v-for="show in upcomingShows" :key="show.id" :show="show" show-year />
+      <div class="section-title">
+        <h2>Upcoming</h2>
+        <NuxtLink to="/map" class="view-all">View on the globe →</NuxtLink>
+      </div>
+      <template v-if="laterShows.length">
+        <ShowRow v-for="show in visibleUpcoming" :key="show.id" :show="show" show-year />
+        <button
+          v-if="hiddenUpcomingCount > 0"
+          class="upcoming-toggle mono"
+          @click="isUpcomingExpanded = !isUpcomingExpanded"
+        >
+          {{ isUpcomingExpanded ? '− Collapse' : `+ Show all ${laterShows.length} upcoming` }}
+        </button>
       </template>
-      <p v-else class="empty mono">No confirmed upcoming dates right now.</p>
+      <p v-else class="empty mono">No further confirmed dates right now.</p>
     </section>
 
     <section class="archive">
@@ -58,7 +91,21 @@ function toggleYear(year: string) {
         <span class="view-all mono">{{ pastShows.length }} shows</span>
       </div>
 
-      <div v-for="g in pastByYear" :key="g.year" class="glass year" :class="{ 'is-open': openYears.has(g.year) }">
+      <div class="timeline">
+        <button
+          v-for="g in yearBars"
+          :key="g.year"
+          class="timeline-year"
+          :class="{ 'is-open': openYears.has(g.year) }"
+          :title="`${g.year} — ${g.shows.length} shows`"
+          @click="jumpToYear(g.year)"
+        >
+          <span class="timeline-bar"><i :style="{ height: `${(g.shows.length / maxYearCount) * 100}%` }" /></span>
+          <span class="timeline-label mono">'{{ g.year.slice(2) }}</span>
+        </button>
+      </div>
+
+      <div v-for="g in pastByYear" :id="`year-${g.year}`" :key="g.year" class="glass year" :class="{ 'is-open': openYears.has(g.year) }">
         <button class="year-head" @click="toggleYear(g.year)">
           <span class="year-label display">{{ g.year }}</span>
           <span class="year-meta mono">{{ g.shows.length }} shows · {{ g.countries }} countries</span>
@@ -85,7 +132,75 @@ function toggleYear(year: string) {
 .panel { padding: 24px 26px; }
 .panel :deep(.show-row:last-child) { border-bottom: 0; }
 
+.upcoming-toggle {
+  width: 100%;
+  padding: 14px 0 4px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--lime);
+  text-align: center;
+  transition: opacity 0.2s ease;
+}
+.upcoming-toggle:hover { opacity: 0.75; }
+
 .archive { display: flex; flex-direction: column; gap: 12px; }
+
+.timeline {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  height: 86px;
+  padding: 0 4px 4px;
+  margin-bottom: 8px;
+}
+
+.timeline-year {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.timeline-bar {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  background: rgba(190, 255, 235, 0.04);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.timeline-bar i {
+  display: block;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(124, 238, 221, 0.55), rgba(124, 238, 221, 0.16));
+  border-radius: 3px 3px 0 0;
+  transition: background 0.2s ease;
+}
+
+.timeline-year:hover .timeline-bar i { background: var(--lime); }
+.timeline-year.is-open .timeline-bar i {
+  background: linear-gradient(180deg, var(--lime), rgba(124, 238, 221, 0.45));
+  box-shadow: 0 0 12px rgba(124, 238, 221, 0.35);
+}
+
+.timeline-label {
+  font-size: 8.5px;
+  letter-spacing: 0.08em;
+  color: var(--ink-4);
+  text-align: center;
+}
+.timeline-year.is-open .timeline-label { color: var(--lime); }
 
 .year { overflow: hidden; }
 
