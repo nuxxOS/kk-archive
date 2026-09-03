@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { formatDuration } from '~/composables/useArchive'
+import { FEATURES, formatDuration } from '~/composables/useArchive'
 
 const route = useRoute()
 const { sets, ids } = useArchive()
@@ -81,7 +81,7 @@ const dnaStats = computed(() => {
     </section>
 
     <!-- RELATED IDS -->
-    <section v-if="relatedIds.length">
+    <section v-if="FEATURES.idHunter && relatedIds.length">
       <div class="section-title">
         <h2 class="display" style="font-size: 22px">IDs from this set</h2>
         <NuxtLink to="/ids" class="view-all">All IDs →</NuxtLink>
