@@ -1,16 +1,22 @@
 <script setup lang="ts">
+import { FEATURES } from '~/composables/useArchive'
+
 const { isSample, stats } = useArchive()
 
-const nav = [
-  { to: '/', label: 'Home', glyph: '01' },
-  { to: '/shows', label: 'Shows', glyph: '02' },
-  { to: '/map', label: 'World', glyph: '03' },
-  { to: '/sets', label: 'Sets', glyph: '04' },
-  { to: '/music', label: 'Music', glyph: '05' },
-  { to: '/stats', label: 'Stats', glyph: '06' },
-  { to: '/ids', label: 'ID Hunter', glyph: '07' },
-  { to: '/about', label: 'About', glyph: '08' },
+const NAV_ITEMS = [
+  { to: '/', label: 'Home' },
+  { to: '/shows', label: 'Shows' },
+  { to: '/map', label: 'World' },
+  { to: '/sets', label: 'Sets' },
+  { to: '/music', label: 'Music' },
+  { to: '/stats', label: 'Stats' },
+  { to: '/ids', label: 'ID Hunter', flag: 'idHunter' as const },
+  { to: '/about', label: 'About' },
 ]
+const nav = NAV_ITEMS.filter((item) => !item.flag || FEATURES[item.flag]).map((item, i) => ({
+  ...item,
+  glyph: String(i + 1).padStart(2, '0'),
+}))
 
 const menuOpen = ref(false)
 const route = useRoute()
@@ -22,8 +28,11 @@ watch(() => route.path, () => (menuOpen.value = false))
     <!-- sidebar (desktop) / topbar (mobile) -->
     <aside class="side" :class="{ 'is-open': menuOpen }">
       <NuxtLink to="/" class="side-brand">
-        <span class="side-logo display">KK</span>
-        <span class="side-tag label">Fan Hub</span>
+        <img src="/logo.svg" alt="Burning world — KlangKuenstler Fan Hub" class="side-logo" />
+        <span class="side-wordmark display">
+          <span class="wordmark-line"><span class="wordmark-cap">K</span>lang</span>
+          <span class="wordmark-line"><span class="wordmark-cap">K</span>uenstler</span>
+        </span>
       </NuxtLink>
 
       <nav class="side-nav">
@@ -84,7 +93,7 @@ watch(() => route.path, () => (menuOpen.value = false))
           </div>
         </div>
         <div class="foot-base mono">
-          <span>{{ stats.sets }} sets · {{ stats.shows }} shows · {{ stats.idsTracked }} IDs</span>
+          <span>{{ stats.shows }} shows · {{ stats.countries }} countries · {{ stats.sets }} sets</span>
           <span>built by <a href="https://josipz.dev" target="_blank" rel="noopener">josipz.dev</a> — developer &amp; DJ</span>
         </div>
       </footer>
@@ -112,8 +121,33 @@ watch(() => route.path, () => (menuOpen.value = false))
   z-index: 30;
 }
 
-.side-brand { display: flex; flex-direction: column; gap: 6px; margin-bottom: 40px; }
-.side-logo { font-size: 34px; color: var(--ink); letter-spacing: -0.04em; }
+.side-brand { display: flex; align-items: center; gap: 12px; margin-bottom: 40px; }
+.side-logo {
+  width: 56px;
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 10px rgba(124, 238, 221, 0.55)) drop-shadow(0 0 26px rgba(124, 238, 221, 0.3));
+}
+.side-wordmark {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 56px;
+  color: var(--ink);
+  text-shadow: 0 0 16px rgba(124, 238, 221, 0.5), 0 0 40px rgba(124, 238, 221, 0.25);
+}
+.wordmark-line {
+  display: flex;
+  align-items: baseline;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  line-height: 1;
+}
+.wordmark-cap {
+  font-size: 27px;
+  line-height: 0.78;
+  letter-spacing: 0.02em;
+  margin-right: 1px;
+}
 
 .side-nav { display: flex; flex-direction: column; gap: 2px; }
 

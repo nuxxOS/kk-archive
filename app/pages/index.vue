@@ -1,10 +1,9 @@
 <script setup lang="ts">
 import { formatDuration, formatShowDate } from '~/composables/useArchive'
 
-const { shows, nextShow, latestSet, sortedSets, sortedIds, upcomingShows, stats } = useArchive()
+const { shows, nextShow, latestSet, sortedSets, upcomingShows, stats } = useArchive()
 
 const nextShowDate = nextShow ? formatShowDate(nextShow.date) : null
-const recentIds = sortedIds.slice(0, 2)
 </script>
 
 <template>
@@ -24,7 +23,7 @@ const recentIds = sortedIds.slice(0, 2)
           </p>
           <div class="hero-actions">
             <NuxtLink to="/sets" class="btn">Explore sets →</NuxtLink>
-            <NuxtLink to="/ids" class="btn btn-ghost">ID Hunter</NuxtLink>
+            <NuxtLink to="/map" class="btn btn-ghost">The world tour</NuxtLink>
           </div>
         </div>
 
@@ -47,8 +46,8 @@ const recentIds = sortedIds.slice(0, 2)
           <span class="hero-tile-label">Tracks logged</span>
         </div>
         <div class="glass hero-tile">
-          <span class="hero-tile-value mono">{{ stats.idsOpen }}</span>
-          <span class="hero-tile-label">Unsolved IDs</span>
+          <span class="hero-tile-value mono">{{ stats.countries }}</span>
+          <span class="hero-tile-label">Countries played</span>
         </div>
         <div class="glass hero-tile">
           <span class="hero-tile-value mono">{{ stats.shows }}</span>
@@ -111,16 +110,6 @@ const recentIds = sortedIds.slice(0, 2)
         </div>
       </section>
 
-      <!-- ============ ID HUNTER ============ -->
-      <section>
-        <div class="section-title">
-          <h2>ID Hunter</h2>
-          <NuxtLink to="/ids" class="view-all">All IDs →</NuxtLink>
-        </div>
-        <div class="stack">
-          <IdRow v-for="entry in recentIds" :key="entry.id" :entry="entry" />
-        </div>
-      </section>
     </div>
   </div>
 </template>
