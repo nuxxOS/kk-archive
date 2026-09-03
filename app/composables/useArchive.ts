@@ -54,11 +54,19 @@ export interface SetEntry {
 }
 
 // static JSON — derive everything once at module load, no reactivity needed
-const shows = showsData.shows as Show[]
+const rawShows = showsData.shows as Show[]
+// while sets are sample data, shows must not link into them
+const shows = setsData._sample
+  ? rawShows.map((s) => (s.setSlug || s.setRecorded ? { ...s, setSlug: undefined, setRecorded: false } : s))
+  : rawShows
 const ids = idsData.ids as TrackedId[]
 const sets = setsData.sets as SetEntry[]
 
-const isSample = showsData._sample || idsData._sample || setsData._sample
+// launch flags — ID Hunter is parked until real ID sourcing exists
+export const FEATURES = { idHunter: false }
+
+// ids excluded: the ID Hunter surface is flagged off, its sample data is invisible
+const isSample = showsData._sample || setsData._sample
 
 export const today = new Date().toISOString().slice(0, 10)
 
@@ -75,6 +83,7 @@ const openIds = sortedIds.filter((i) => i.status === 'unknown' || i.status === '
 const stats = {
   sets: sets.length,
   shows: shows.length,
+  countries: new Set(shows.map((s) => s.country).filter(Boolean)).size,
   idsTracked: ids.length,
   idsOpen: openIds.length,
   tracks: sets.reduce((acc, s) => acc + s.dna.trackCount, 0),
@@ -91,9 +100,10 @@ export function formatDuration(sec: number): string {
   return `${h}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`
 }
 
-export function formatShowDate(date: string): { day: string; month: string; year: string } {
+export function formatShowDate(date: string): { weekday: string; day: string; month: string; year: string } {
   const d = new Date(date + 'T00:00:00')
   return {
+    weekday: d.toLocaleString('en', { weekday: 'short' }).slice(0, 2).toUpperCase(),
     day: String(d.getDate()).padStart(2, '0'),
     month: d.toLocaleString('en', { month: 'short' }).toUpperCase(),
     year: String(d.getFullYear()),
