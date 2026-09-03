@@ -381,18 +381,6 @@
       "source": "ra"
     },
     {
-      "id": "2026-05-30-awakenings",
-      "date": "2026-05-30",
-      "event": "Awakenings Festival",
-      "venue": "Spaarnwoude",
-      "city": "Amsterdam",
-      "country": "NL",
-      "status": "confirmed",
-      "ticketUrl": "",
-      "setRecorded": true,
-      "setSlug": "sample-awakenings-2026"
-    },
-    {
       "id": "sk-2026-05-16-silo",
       "date": "2026-05-16",
       "event": "Klangkuenstler @ SILO",
@@ -801,18 +789,6 @@
       "ticketUrl": "https://ra.co/events/2168020",
       "setRecorded": false,
       "source": "ra"
-    },
-    {
-      "id": "2025-10-18-sample-ade",
-      "date": "2025-10-18",
-      "event": "Sample ADE Night",
-      "venue": "Gashouder",
-      "city": "Amsterdam",
-      "country": "NL",
-      "status": "confirmed",
-      "ticketUrl": "",
-      "setRecorded": true,
-      "setSlug": "sample-ade-2025"
     },
     {
       "id": "ra-2256318",
@@ -4116,8 +4092,7 @@
       "country": "NL",
       "status": "confirmed",
       "ticketUrl": "",
-      "setRecorded": true,
-      "setSlug": "sample-awakenings-2022"
+      "setRecorded": false
     },
     {
       "id": "ra-1567299",
