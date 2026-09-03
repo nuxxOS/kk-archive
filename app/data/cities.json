@@ -1,0 +1,839 @@
+{
+  "cities": {
+    "Düsseldorf": {
+      "lat": 51.22319,
+      "lng": 6.77927,
+      "country": "DE"
+    },
+    "San Diego": {
+      "lat": 32.71571,
+      "lng": -117.16472,
+      "country": "US"
+    },
+    "Schwechat": {
+      "lat": 48.13333,
+      "lng": 16.46667,
+      "country": "AT"
+    },
+    "Porto": {
+      "lat": 41.1485,
+      "lng": -8.61097,
+      "country": "PT"
+    },
+    "New York City": {
+      "lat": 40.71427,
+      "lng": -74.00597,
+      "country": "US"
+    },
+    "Manchester": {
+      "lat": 53.48095,
+      "lng": -2.23743,
+      "country": "GB"
+    },
+    "Mexico City": {
+      "lat": 19.42847,
+      "lng": -99.12766,
+      "country": "MX"
+    },
+    "Orlando": {
+      "lat": 28.53834,
+      "lng": -81.37924,
+      "country": "US"
+    },
+    "Ljubljana": {
+      "lat": 46.05108,
+      "lng": 14.50513,
+      "country": "SI"
+    },
+    "Amsterdam": {
+      "lat": 52.37403,
+      "lng": 4.88969,
+      "country": "NL"
+    },
+    "Madrid": {
+      "lat": 40.4165,
+      "lng": -3.70256,
+      "country": "ES"
+    },
+    "Valencia": {
+      "lat": 39.47391,
+      "lng": -0.37966,
+      "country": "ES"
+    },
+    "Los Angeles": {
+      "lat": 34.05223,
+      "lng": -118.24368,
+      "country": "US"
+    },
+    "Sao Paulo": {
+      "lat": -23.5475,
+      "lng": -46.63611,
+      "country": "BR"
+    },
+    "Santiago": {
+      "lat": -33.45694,
+      "lng": -70.64827,
+      "country": "CL"
+    },
+    "Cologne": {
+      "lat": 50.93333,
+      "lng": 6.95,
+      "country": "DE"
+    },
+    "Sydney": {
+      "lat": -33.86785,
+      "lng": 151.20732,
+      "country": "AU"
+    },
+    "Melbourne": {
+      "lat": -37.814,
+      "lng": 144.96332,
+      "country": "AU"
+    },
+    "Fraga": {
+      "lat": 41.52294,
+      "lng": 0.34894,
+      "country": "ES"
+    },
+    "Chicago": {
+      "lat": 41.85003,
+      "lng": -87.65005,
+      "country": "US"
+    },
+    "Istanbul": {
+      "lat": 41.01384,
+      "lng": 28.94966,
+      "country": "TR"
+    },
+    "Lodz": {
+      "lat": 51.77058,
+      "lng": 19.47395,
+      "country": "PL"
+    },
+    "Lyon": {
+      "lat": 45.74906,
+      "lng": 4.84789,
+      "country": "FR"
+    },
+    "Rotterdam": {
+      "lat": 51.9225,
+      "lng": 4.47917,
+      "country": "NL"
+    },
+    "Antwerp": {
+      "lat": 51.22047,
+      "lng": 4.40026,
+      "country": "BE"
+    },
+    "Ghent": {
+      "lat": 51.05,
+      "lng": 3.71667,
+      "country": "BE"
+    },
+    "Miami": {
+      "lat": 25.77427,
+      "lng": -80.19366,
+      "country": "US"
+    },
+    "Detroit": {
+      "lat": 42.33143,
+      "lng": -83.04575,
+      "country": "US"
+    },
+    "Edinburgh": {
+      "lat": 55.95206,
+      "lng": -3.19648,
+      "country": "GB"
+    },
+    "Copenhagen": {
+      "lat": 55.67594,
+      "lng": 12.56553,
+      "country": "DK"
+    },
+    "Buenos Aires": {
+      "lat": -34.61315,
+      "lng": -58.37723,
+      "country": "AR"
+    },
+    "Sevilla": {
+      "lat": 37.38283,
+      "lng": -5.97317,
+      "country": "ES"
+    },
+    "Vigo": {
+      "lat": 42.23282,
+      "lng": -8.72264,
+      "country": "ES"
+    },
+    "Dortmund / Essen": {
+      "lat": 51.51,
+      "lng": 7.46,
+      "country": "DE"
+    },
+    "Catania": {
+      "lat": 37.49223,
+      "lng": 15.07041,
+      "country": "IT"
+    },
+    "Bad Aibling": {
+      "lat": 47.8638,
+      "lng": 12.01055,
+      "country": "DE"
+    },
+    "Wettingen": {
+      "lat": 47.46606,
+      "lng": 8.32663,
+      "country": "CH"
+    },
+    "Washington DC": {
+      "lat": 38.91,
+      "lng": -77.04,
+      "country": "US"
+    },
+    "Augsburg": {
+      "lat": 48.37154,
+      "lng": 10.89851,
+      "country": "DE"
+    },
+    "Sofia": {
+      "lat": 42.69751,
+      "lng": 23.32415,
+      "country": "BG"
+    },
+    "Austin": {
+      "lat": 30.26715,
+      "lng": -97.74306,
+      "country": "US"
+    },
+    "All": {
+      "lat": 44.04997,
+      "lng": 8.21829,
+      "country": "IT"
+    },
+    "Hannover": {
+      "lat": 52.37052,
+      "lng": 9.73322,
+      "country": "DE"
+    },
+    "Dubai": {
+      "lat": 25.07725,
+      "lng": 55.30927,
+      "country": "AE"
+    },
+    "Naples": {
+      "lat": 40.85216,
+      "lng": 14.26811,
+      "country": "IT"
+    },
+    "Budapest": {
+      "lat": 47.49835,
+      "lng": 19.04045,
+      "country": "HU"
+    },
+    "South": {
+      "lat": 37.32922,
+      "lng": -86.3647,
+      "country": "US"
+    },
+    "Geneva": {
+      "lat": 46.20222,
+      "lng": 6.14569,
+      "country": "CH"
+    },
+    "Atlanta": {
+      "lat": 33.749,
+      "lng": -84.38798,
+      "country": "US"
+    },
+    "Ibiza": {
+      "lat": 38.90883,
+      "lng": 1.43296,
+      "country": "ES"
+    },
+    "Athens": {
+      "lat": 37.98376,
+      "lng": 23.72784,
+      "country": "GR"
+    },
+    "Warsaw": {
+      "lat": 52.22977,
+      "lng": 21.01178,
+      "country": "PL"
+    },
+    "Florence": {
+      "lat": 43.77925,
+      "lng": 11.24626,
+      "country": "IT"
+    },
+    "Thuringia": {
+      "lat": 50.66667,
+      "lng": 10.83333,
+      "country": "DE"
+    },
+    "East": {
+      "lat": 42.06121,
+      "lng": -71.86396,
+      "country": "US"
+    },
+    "Barcelona": {
+      "lat": 41.38879,
+      "lng": 2.15899,
+      "country": "ES"
+    },
+    "Freiburg": {
+      "lat": 47.9959,
+      "lng": 7.85222,
+      "country": "DE"
+    },
+    "North": {
+      "lat": 40.84856,
+      "lng": -111.90688,
+      "country": "US"
+    },
+    "Tokyo": {
+      "lat": 35.6895,
+      "lng": 139.69171,
+      "country": "JP"
+    },
+    "Utrecht": {
+      "lat": 52.09083,
+      "lng": 5.12222,
+      "country": "NL"
+    },
+    "Toronto": {
+      "lat": 43.70643,
+      "lng": -79.39864,
+      "country": "CA"
+    },
+    "Malaga": {
+      "lat": 36.72016,
+      "lng": -4.42034,
+      "country": "ES"
+    },
+    "Venice": {
+      "lat": 39.75895,
+      "lng": -84.19161,
+      "country": "US"
+    },
+    "Paris": {
+      "lat": 48.85341,
+      "lng": 2.3488,
+      "country": "FR"
+    },
+    "Basel": {
+      "lat": 47.55839,
+      "lng": 7.57327,
+      "country": "CH"
+    },
+    "Denver": {
+      "lat": 39.73915,
+      "lng": -104.9847,
+      "country": "US"
+    },
+    "Bern": {
+      "lat": 46.94809,
+      "lng": 7.44744,
+      "country": "CH"
+    },
+    "Phoenix": {
+      "lat": 33.44838,
+      "lng": -112.07404,
+      "country": "US"
+    },
+    "Tallinn": {
+      "lat": 59.43696,
+      "lng": 24.75353,
+      "country": "EE"
+    },
+    "Frankfurt": {
+      "lat": 50.11552,
+      "lng": 8.68417,
+      "country": "DE"
+    },
+    "Erfurt": {
+      "lat": 50.97734,
+      "lng": 11.03536,
+      "country": "DE"
+    },
+    "Seoul": {
+      "lat": 37.566,
+      "lng": 126.9784,
+      "country": "KR"
+    },
+    "Zurich": {
+      "lat": 47.36667,
+      "lng": 8.55,
+      "country": "CH"
+    },
+    "Mumbai": {
+      "lat": 19.07283,
+      "lng": 72.88261,
+      "country": "IN"
+    },
+    "Sicily": {
+      "lat": 37.62304,
+      "lng": 13.93457,
+      "country": "IT"
+    },
+    "Tirana": {
+      "lat": 41.32744,
+      "lng": 19.81866,
+      "country": "AL"
+    },
+    "Bogotá": {
+      "lat": 4.60971,
+      "lng": -74.08175,
+      "country": "CO"
+    },
+    "Montreal": {
+      "lat": 45.50884,
+      "lng": -73.58781,
+      "country": "CA"
+    },
+    "Las Vegas": {
+      "lat": 36.17497,
+      "lng": -115.13722,
+      "country": "US"
+    },
+    "Mannheim": {
+      "lat": 49.4891,
+      "lng": 8.46694,
+      "country": "DE"
+    },
+    "Rome": {
+      "lat": 41.89193,
+      "lng": 12.51133,
+      "country": "IT"
+    },
+    "Munich": {
+      "lat": 48.13743,
+      "lng": 11.57549,
+      "country": "DE"
+    },
+    "Gdansk": {
+      "lat": 54.35227,
+      "lng": 18.64912,
+      "country": "PL"
+    },
+    "Lisbon": {
+      "lat": 38.72509,
+      "lng": -9.1498,
+      "country": "PT"
+    },
+    "Berlin": {
+      "lat": 52.52437,
+      "lng": 13.41053,
+      "country": "DE"
+    },
+    "Guadalajara": {
+      "lat": 20.67738,
+      "lng": -103.34749,
+      "country": "MX"
+    },
+    "Poznan": {
+      "lat": 52.40692,
+      "lng": 16.92993,
+      "country": "PL"
+    },
+    "Prague": {
+      "lat": 50.08804,
+      "lng": 14.42076,
+      "country": "CZ"
+    },
+    "Hamburg": {
+      "lat": 53.55073,
+      "lng": 9.99302,
+      "country": "DE"
+    },
+    "Belfast": {
+      "lat": 54.59682,
+      "lng": -5.92541,
+      "country": "GB"
+    },
+    "Belgrade": {
+      "lat": 44.80401,
+      "lng": 20.46513,
+      "country": "RS"
+    },
+    "Lausanne": {
+      "lat": 46.516,
+      "lng": 6.63282,
+      "country": "CH"
+    },
+    "Brussels": {
+      "lat": 50.85045,
+      "lng": 4.34878,
+      "country": "BE"
+    },
+    "Glasgow": {
+      "lat": 55.86515,
+      "lng": -4.25763,
+      "country": "GB"
+    },
+    "London": {
+      "lat": 51.50853,
+      "lng": -0.12574,
+      "country": "GB"
+    },
+    "Nürnberg": {
+      "lat": 49.45421,
+      "lng": 11.07752,
+      "country": "DE"
+    },
+    "Saxony": {
+      "lat": -28.60988,
+      "lng": 31.37585,
+      "country": "ZA"
+    },
+    "Central": {
+      "lat": 37.13179,
+      "lng": -80.57645,
+      "country": "US"
+    },
+    "Helsinki": {
+      "lat": 60.16952,
+      "lng": 24.93545,
+      "country": "FI"
+    },
+    "Dublin": {
+      "lat": 53.33306,
+      "lng": -6.24889,
+      "country": "IE"
+    },
+    "Strasbourg": {
+      "lat": 48.58392,
+      "lng": 7.74553,
+      "country": "FR"
+    },
+    "Cali": {
+      "lat": 3.43054,
+      "lng": -76.5199,
+      "country": "CO"
+    },
+    "Medellin": {
+      "lat": 6.245,
+      "lng": -75.57151,
+      "country": "CO"
+    },
+    "Cardiff": {
+      "lat": 51.48,
+      "lng": -3.18,
+      "country": "GB"
+    },
+    "Vienna": {
+      "lat": 48.20849,
+      "lng": 16.37208,
+      "country": "AT"
+    },
+    "Turin": {
+      "lat": 45.07049,
+      "lng": 7.68682,
+      "country": "IT"
+    },
+    "Taipei": {
+      "lat": 25.05306,
+      "lng": 121.52639,
+      "country": "TW"
+    },
+    "Nantes": {
+      "lat": 47.21725,
+      "lng": -1.55336,
+      "country": "FR"
+    },
+    "Brno": {
+      "lat": 49.19522,
+      "lng": 16.60796,
+      "country": "CZ"
+    },
+    "Karlsruhe": {
+      "lat": 49.00937,
+      "lng": 8.40444,
+      "country": "DE"
+    },
+    "Bavaria": {
+      "lat": 45.8105,
+      "lng": 12.18607,
+      "country": "IT"
+    },
+    "Liverpool": {
+      "lat": 53.41058,
+      "lng": -2.97794,
+      "country": "GB"
+    },
+    "Riga": {
+      "lat": 56.946,
+      "lng": 24.10589,
+      "country": "LV"
+    },
+    "Vilnius": {
+      "lat": 54.68916,
+      "lng": 25.2798,
+      "country": "LT"
+    },
+    "Kyiv": {
+      "lat": 50.45466,
+      "lng": 30.5238,
+      "country": "UA"
+    },
+    "Münster": {
+      "lat": 51.96236,
+      "lng": 7.62571,
+      "country": "DE"
+    },
+    "Tbilisi": {
+      "lat": 41.69143,
+      "lng": 44.83412,
+      "country": "GE"
+    },
+    "Moscow": {
+      "lat": 55.75204,
+      "lng": 37.61781,
+      "country": "RU"
+    },
+    "Leipzig": {
+      "lat": 51.33962,
+      "lng": 12.37129,
+      "country": "DE"
+    },
+    "South West": {
+      "lat": 36.51258,
+      "lng": -94.61133,
+      "country": "US"
+    },
+    "Stuttgart": {
+      "lat": 48.78232,
+      "lng": 9.17702,
+      "country": "DE"
+    },
+    "Regensburg": {
+      "lat": 49.01513,
+      "lng": 12.10161,
+      "country": "DE"
+    },
+    "Brandenburg": {
+      "lat": 37.99896,
+      "lng": -86.16941,
+      "country": "US"
+    },
+    "Leeds": {
+      "lat": 53.79648,
+      "lng": -1.54785,
+      "country": "GB"
+    },
+    "Dallas/Fort Worth": {
+      "lat": 32.89595,
+      "lng": -97.0372,
+      "country": "US"
+    },
+    "Kassel": {
+      "lat": 51.31667,
+      "lng": 9.5,
+      "country": "DE"
+    },
+    "Kuala Lumpur": {
+      "lat": 3.1412,
+      "lng": 101.68653,
+      "country": "MY"
+    },
+    "Bangkok": {
+      "lat": 13.75398,
+      "lng": 100.50144,
+      "country": "TH"
+    },
+    "Toulouse": {
+      "lat": 43.60426,
+      "lng": 1.44367,
+      "country": "FR"
+    },
+    "Nijmegen": {
+      "lat": 51.8425,
+      "lng": 5.85278,
+      "country": "NL"
+    },
+    "Dresden": {
+      "lat": 51.05089,
+      "lng": 13.73832,
+      "country": "DE"
+    },
+    "San Francisco/Oakland": {
+      "lat": 37.77,
+      "lng": -122.42,
+      "country": "US"
+    },
+    "Inglewood": {
+      "lat": 33.96168,
+      "lng": -118.35313,
+      "country": "US"
+    },
+    "Kensington": {
+      "lat": 40.56979,
+      "lng": -79.76477,
+      "country": "US"
+    },
+    "Salzburg": {
+      "lat": 47.79941,
+      "lng": 13.04399,
+      "country": "AT"
+    },
+    "Dallas": {
+      "lat": 32.78306,
+      "lng": -96.80667,
+      "country": "US"
+    },
+    "Schweinfurt": {
+      "lat": 50.04937,
+      "lng": 10.22175,
+      "country": "DE"
+    },
+    "Phuket": {
+      "lat": 7.89059,
+      "lng": 98.3981,
+      "country": "TH"
+    },
+    "Daly City": {
+      "lat": 37.70577,
+      "lng": -122.46192,
+      "country": "US"
+    },
+    "Grimbergen": {
+      "lat": 50.93409,
+      "lng": 4.37213,
+      "country": "BE"
+    },
+    "Salt Lake City": {
+      "lat": 40.76078,
+      "lng": -111.89105,
+      "country": "US"
+    },
+    "Villepinte": {
+      "lat": 48.96203,
+      "lng": 2.53253,
+      "country": "FR"
+    },
+    "Port Melbourne": {
+      "lat": -37.83961,
+      "lng": 144.94228,
+      "country": "AU"
+    },
+    "Gallipoli": {
+      "lat": 40.05594,
+      "lng": 17.99088,
+      "country": "IT"
+    },
+    "Vianen": {
+      "lat": 51.9925,
+      "lng": 5.09167,
+      "country": "NL"
+    },
+    "Brooklyn": {
+      "lat": 40.6501,
+      "lng": -73.94958,
+      "country": "US"
+    },
+    "Long Beach": {
+      "lat": 33.76696,
+      "lng": -118.18923,
+      "country": "US"
+    },
+    "Kerkrade": {
+      "lat": 50.86583,
+      "lng": 6.0625,
+      "country": "NL"
+    },
+    "Düren": {
+      "lat": 50.80434,
+      "lng": 6.49299,
+      "country": "DE"
+    },
+    "Almería": {
+      "lat": 36.83814,
+      "lng": -2.45974,
+      "country": "ES"
+    },
+    "Weeze": {
+      "lat": 51.62678,
+      "lng": 6.19792,
+      "country": "DE"
+    },
+    "Dour": {
+      "lat": 50.39583,
+      "lng": 3.77792,
+      "country": "BE"
+    },
+    "Boom": {
+      "lat": 51.09242,
+      "lng": 4.3717,
+      "country": "BE"
+    },
+    "Esmoriz": {
+      "lat": 40.95773,
+      "lng": -8.62753,
+      "country": "PT"
+    },
+    "Memmingen": {
+      "lat": 47.98372,
+      "lng": 10.18527,
+      "country": "DE"
+    },
+    "Villeurbanne": {
+      "lat": 45.76601,
+      "lng": 4.8795,
+      "country": "FR"
+    },
+    "Erkelenz": {
+      "lat": 51.07947,
+      "lng": 6.31531,
+      "country": "DE"
+    },
+    "Essen": {
+      "lat": 51.45657,
+      "lng": 7.01228,
+      "country": "DE"
+    },
+    "Winterthur": {
+      "lat": 47.50564,
+      "lng": 8.72413,
+      "country": "CH"
+    },
+    "Arnhem": {
+      "lat": 51.98,
+      "lng": 5.91111,
+      "country": "NL"
+    },
+    "Camboriu": {
+      "lat": -26.99056,
+      "lng": -48.63472,
+      "country": "BR"
+    },
+    "Ferndale": {
+      "lat": 42.46059,
+      "lng": -83.13465,
+      "country": "US"
+    },
+    "Brunswick": {
+      "lat": 31.15013,
+      "lng": -81.49147,
+      "country": "US"
+    },
+    "Erbach": {
+      "lat": 49.66148,
+      "lng": 8.99402,
+      "country": "DE"
+    },
+    "Koblenz": {
+      "lat": 50.35357,
+      "lng": 7.57883,
+      "country": "DE"
+    },
+    "Heidelberg": {
+      "lat": 49.40768,
+      "lng": 8.69079,
+      "country": "DE"
+    },
+    "Greifswald": {
+      "lat": 54.08905,
+      "lng": 13.40244,
+      "country": "DE"
+    }
+  }
+}

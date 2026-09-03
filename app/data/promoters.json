@@ -1,0 +1,125 @@
+{
+  "_note": "Promoter/venue watchlist — direct sources beat aggregators (job-radar lesson). strategy: jsonld = generic headless-Chrome JSON-LD fetch (filtered to KK by performer/name match); manual = check by hand, no machine-readable feed found yet; todo = not yet probed.",
+  "promoters": [
+    {
+      "id": "outworld-stadium",
+      "name": "Outworld Stadium (official)",
+      "region": "DE",
+      "eventsUrl": "https://outworld-stadium.com/",
+      "strategy": "manual",
+      "status": "active",
+      "note": "KK own arena site; NO json-ld (checked 2026-09-02) — check by hand on new productions"
+    },
+    {
+      "id": "rotterdam-rave",
+      "name": "Rotterdam Rave / Outworld NL",
+      "region": "NL",
+      "eventsUrl": "https://www.rotterdamrave.com/events",
+      "strategy": "jsonld",
+      "status": "todo"
+    },
+    {
+      "id": "insomniac",
+      "name": "Insomniac / Factory 93",
+      "region": "US",
+      "eventsUrl": "https://www.insomniac.com/events/",
+      "strategy": "jsonld",
+      "status": "todo",
+      "note": "runs Outworld LA (Kia Forum); events pages have structured data"
+    },
+    {
+      "id": "the-grid",
+      "name": "The Grid",
+      "region": "CL/BR/MX",
+      "eventsUrl": "https://www.thegrid.cl/",
+      "strategy": "todo",
+      "status": "todo",
+      "note": "South America Outworld promoter (Santiago, São Paulo)"
+    },
+    {
+      "id": "awakenings",
+      "name": "Awakenings",
+      "region": "NL",
+      "eventsUrl": "https://www.awakenings.com/events/",
+      "strategy": "jsonld",
+      "status": "todo"
+    },
+    {
+      "id": "time-warp",
+      "name": "Time Warp",
+      "region": "DE/US",
+      "eventsUrl": "https://www.time-warp.de/",
+      "strategy": "todo",
+      "status": "todo"
+    },
+    {
+      "id": "fabrik-code",
+      "name": "Fabrik / CODE Madrid",
+      "region": "ES",
+      "eventsUrl": "https://fabrikmadrid.com/",
+      "strategy": "todo",
+      "status": "todo"
+    },
+    {
+      "id": "verknipt",
+      "name": "Verknipt",
+      "region": "NL",
+      "eventsUrl": "https://verknipt.org/agenda/",
+      "strategy": "jsonld",
+      "status": "todo"
+    },
+    {
+      "id": "bsh-events",
+      "name": "BSH Events",
+      "region": "SI/HR/Balkans",
+      "eventsUrl": "https://www.entrio.si/en/brand/bsh-events",
+      "strategy": "manual",
+      "status": "active",
+      "note": "Balkan hard techno promoter (Ljubljana etc.); entrio brand pages Cloudflare-walled — check IG @bsh.events + entrio via browser"
+    },
+    {
+      "id": "hardbeats",
+      "name": "HardBeats",
+      "region": "SI",
+      "eventsUrl": "https://www.hardbeats.org/",
+      "strategy": "manual",
+      "status": "active",
+      "note": "Ljubljana promoter (Media Center), booked KK 2024; site is plain HTML, links to entrio"
+    },
+    {
+      "id": "entrio",
+      "name": "Entrio (SI/HR ticketing)",
+      "region": "SI/HR",
+      "eventsUrl": "https://www.entrio.si/en/search?q=klangkuenstler",
+      "strategy": "manual",
+      "status": "active",
+      "note": "Regional ticketing monopoly for Balkans; Cloudflare blocks curl, headless Chrome AND server-side fetch (checked 2026-09-02) — manual browser check only"
+    },
+    {
+      "id": "skiddle",
+      "name": "Skiddle",
+      "region": "UK",
+      "eventsUrl": "https://www.skiddle.com/artists/klangkuenstler-123533608/",
+      "strategy": "todo",
+      "status": "todo",
+      "note": "UK aggregator; has a FREE public API (key signup) — good candidate for UK coverage"
+    }
+  ],
+  "deadEnds": [
+    {
+      "source": "Bandsintown",
+      "reason": "API auth-gated (2026); artist page serves bot-challenge even to headless Chrome",
+      "checked": "2026-09-02"
+    },
+    {
+      "source": "Ticketmaster Discovery API",
+      "reason": "viable but needs free API key — signup required",
+      "checked": "2026-09-02"
+    },
+    {
+      "source": "setlist.fm API",
+      "reason": "viable for PAST show archive — needs free API key",
+      "checked": "2026-09-02"
+    }
+  ]
+}

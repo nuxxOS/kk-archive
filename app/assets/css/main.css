@@ -1,0 +1,186 @@
+:root {
+  /* target: outworld-stadium.com — deep green-black, teal haze, pale mint signal */
+  --ground: #040d0b;
+  --ground-2: #071411;
+  --panel: rgba(7, 20, 17, 0.72);
+  --panel-solid: #0a1714;
+  --line: rgba(170, 240, 220, 0.08);
+  --line-2: rgba(170, 240, 220, 0.16);
+
+  --ink: #edf6f2;
+  --ink-2: #adc2ba;
+  --ink-3: #7a9187;
+  --ink-4: #52685f;
+
+  --lime: #7ceedd;
+  --lime-soft: rgba(124, 238, 221, 0.65);
+  --lime-bg: rgba(124, 238, 221, 0.1);
+  --lime-border: rgba(124, 238, 221, 0.3);
+  --lime-ink: #04211b;
+
+  --warn: #f2b04e;
+  --warn-bg: rgba(242, 176, 78, 0.1);
+  --warn-border: rgba(242, 176, 78, 0.28);
+
+  --shadow: 0 12px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(190, 255, 235, 0.05);
+
+  --disp: 'Inter', system-ui, sans-serif;
+  --body: 'Inter', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { background: var(--ground); scrollbar-color: #232723 var(--ground); overflow-x: clip; }
+
+body {
+  font-family: var(--body);
+  color: var(--ink);
+  overflow-x: clip;
+  background:
+    radial-gradient(60% 42% at 50% 0%, rgba(64, 190, 160, 0.1) 0%, transparent 62%),
+    radial-gradient(80% 60% at 8% 100%, rgba(18, 62, 52, 0.35) 0%, transparent 68%),
+    linear-gradient(180deg, #081512 0%, var(--ground) 55%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* film grain */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.06;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+#__nuxt { position: relative; z-index: 2; }
+
+a { color: inherit; text-decoration: none; }
+button { font: inherit; }
+
+::selection { background: var(--lime-bg); color: var(--lime); }
+
+/* ---------- primitives ---------- */
+
+.glass {
+  background: var(--panel);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  transition: border-color 0.2s ease;
+}
+
+.glass.is-link:hover { border-color: var(--line-2); }
+
+.display {
+  font-family: var(--disp);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  line-height: 1.04;
+}
+
+.mono { font-family: var(--mono); }
+
+.label {
+  font-family: var(--body);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.label-lime { color: var(--lime); }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line-2);
+  color: var(--ink-3);
+  background: rgba(190, 255, 235, 0.04);
+}
+
+.badge-confirmed, .badge-released {
+  color: var(--lime);
+  background: var(--lime-bg);
+  border-color: var(--lime-border);
+}
+
+.badge-guess, .badge-rumoured {
+  color: var(--warn);
+  background: var(--warn-bg);
+  border-color: var(--warn-border);
+}
+
+.badge-unknown { color: var(--ink-4); }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--lime-ink);
+  background: var(--lime);
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 12px 22px;
+  cursor: pointer;
+  box-shadow: 0 0 24px rgba(124, 238, 221, 0.25);
+  transition: filter 0.2s ease;
+}
+
+.btn:hover { filter: brightness(1.08); }
+
+.btn-ghost {
+  color: var(--ink);
+  background: transparent;
+  border-color: var(--line-2);
+  box-shadow: none;
+}
+
+.btn-ghost:hover { background: rgba(190, 255, 235, 0.06); }
+
+.section-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.section-title h2 {
+  font-family: var(--disp);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+}
+
+.section-title .view-all {
+  font-family: var(--body);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--lime);
+  white-space: nowrap;
+}

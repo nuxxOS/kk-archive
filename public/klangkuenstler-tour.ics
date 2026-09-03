@@ -1,0 +1,216 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//KK Fan Hub//Tour Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:KlangKuenstler — Tour (unofficial)
+X-WR-CALDESC:All announced KlangKuenstler shows. Fan-maintained\, not affiliated with the artist.
+BEGIN:VEVENT
+UID:outworld-stadium-2027-04-03@kk-fanhub
+DTSTAMP:20270403T000000Z
+DTSTART;VALUE=DATE:20270403
+DTEND;VALUE=DATE:20270404
+SUMMARY:KlangKuenstler — Outworld Stadium — All Night Long
+LOCATION:Merkur Spiel-Arena\, Düsseldorf\, DE
+URL:https://outworld-stadium.com/
+DESCRIPTION:Status: confirmed · Tickets: https://outworld-stadium.com/ · via KK Fan Hub (unofficial)
+END:VEVENT
+BEGIN:VEVENT
+UID:ra-2526737@kk-fanhub
+DTSTAMP:20261231T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:KlangKuenstler — Proper NYE 26/27
+LOCATION:Petco Park\, San Diego\, US
+URL:https://ra.co/events/2526737
+DESCRIPTION:Status: confirmed · Tickets: https://ra.co/events/2526737 · via KK Fan Hub (unofficial)
+END:VEVENT
+BEGIN:VEVENT
+UID:sk-2026-12-12-multiversum@kk-fanhub
+DTSTAMP:20261212T000000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:KlangKuenstler — Klangkuenstler @ Multiversum
+LOCATION:Multiversum\, Schwechat\, Austria
+URL:https://www.songkick.com/concerts/43372086-klangkuenstler-at-multiversum?utm_medium=organic&utm_source=microformat
+DESCRIPTION:Status: confirmed · Tickets: https://www.songkick.com/concerts/43372086-klangkuenstler-at-multiversum?utm_medium=organic&utm_source=microformat · via KK Fan Hub (unofficial)
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-28-outworld-porto@kk-fanhub
+DTSTAMP:20261128T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:KlangKuenstler — Outworld — All Night Long
+LOCATION:Super Bock Arena\, Porto\, PT
+DESCRIPTION:Status: confirmed · via KK Fan Hub (unofficial)
+END:VEVENT
+BEGIN:VEVENT
+UID:ra-2518700@kk-fanhub
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:KlangKuenstler — Time Warp NYC 2026
+LOCATION:Duggal Greenhouse\, New York City\, US
+URL:https://ra.co/events/2518700
+DESCRIPTION:Status: confirmed · Tickets: https://ra.co/events/2518700 · via KK Fan Hub (unofficial)
+END:VEVENT
+BEGIN:VEVENT
+UID:sk-2026-11-14-depot-mayfield@kk-fanhub
+DTSTAMP:20261114T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:KlangKuenstler — Klangkuenstler @ Depot Mayfield
+LOCATION:Depot Mayfield\, Manchester\, UK
+URL:https://www.songkick.com/concerts/43286129-klangkuenstler-at-depot-mayfield?utm_medium=organic&utm_source=microformat
+DESCRIPTION:Status: confirmed · Tickets: https://www.songkick.com/concerts/43286129-klangkuenstler-at-depot-mayfield?utm_medium=organic&utm_source=microformat · via KK Fan Hub (unofficial)
+END:VEVENT
+BEGIN:VEVENT
+UID:sk-2026-11-07-estadio-banorte@kk-fanhub
+DTSTAMP:20261107T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:KlangKuenstler — Klangkuenstler @ Estadio Banorte
+LOCATION:Estadio Banorte\, Mexico City\, Mexico
+URL:https://www.songkick.com/festivals/1924389-ultra-mexico/id/43342911-ultra-mexico-2026?utm_medium=organic&utm_source=microformat
+DESCRIPTION:Status: confirmed · Tickets: https://www.songkick.com/festivals/1924389-ultra-mexico/id/43342911-ultra-mexico-2026?utm_medium=organic&utm_source=microformat · via KK Fan Hub (unofficial)
+END:VEVENT
+BEGIN:VEVENT
+UID:ra-2523916@kk-fanhub
+DTSTAMP:20261106T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:KlangKuenstler — EDC Orlando
+LOCATION:Tinker Field\, Orlando\, US
+URL:https://ra.co/events/2523916
+DESCRIPTION:Status: confirmed · Tickets: https://ra.co/events/2523916 · via KK Fan Hub (unofficial)
+END:VEVENT
+BEGIN:VEVENT
+UID:bsh-2026-10-30@kk-fanhub
+DTSTAMP:20261030T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:KlangKuenstler — BSH Halloween Ljubljana
+LOCATION:Gospodarsko razstavišče\, Ljubljana\, SI
+URL:https://www.entrio.si/en/event/bsh-halloween-ljubljana-33742
+DESCRIPTION:Status: confirmed · Tickets: https://www.entrio.si/en/event/bsh-halloween-ljubljana-33742 · via KK Fan Hub (unofficial)
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-outworld-ams@kk-fanhub
+DTSTAMP:20261024T000000Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:KlangKuenstler — Outworld — All Night Long
+LOCATION:Ziggo Dome\, Amsterdam\, NL
+DESCRIPTION:Status: confirmed · via KK Fan Hub (unofficial)
+END:VEVENT
+BEGIN:VEVENT
+UID:ra-2515512@kk-fanhub
+DTSTAMP:20261011T000000Z
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
+SUMMARY:KlangKuenstler — CODE 23 Anniversary: La Trilogía [Part I] with KlangKuenstler
+LOCATION:Fabrik\, Madrid\, ES
+URL:https://ra.co/events/2515512
+DESCRIPTION:Status: confirmed · Tickets: https://ra.co/events/2515512 · via KK Fan Hub (unofficial)
+END:VEVENT
+BEGIN:VEVENT
+UID:ra-2484438@kk-fanhub
+DTSTAMP:20261009T000000Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:KlangKuenstler — KlangKuenstler x Pandora III Aniversario
+LOCATION:Pandora Sevilla\, Sevilla\, ES
+URL:https://ra.co/events/2484438
+DESCRIPTION:Status: confirmed · Tickets: https://ra.co/events/2484438 · via KK Fan Hub (unofficial)
+END:VEVENT
+BEGIN:VEVENT
+UID:ra-2517597@kk-fanhub
+DTSTAMP:20261008T000000Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:KlangKuenstler — KlangKuenstler + invitados
+LOCATION:Spook Club\, Valencia\, ES
+URL:https://ra.co/events/2517597
+DESCRIPTION:Status: confirmed · Tickets: https://ra.co/events/2517597 · via KK Fan Hub (unofficial)
+END:VEVENT
+BEGIN:VEVENT
+UID:ra-2452834@kk-fanhub
+DTSTAMP:20261003T000000Z
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261004
+SUMMARY:KlangKuenstler — Factory 93 presents: OUTWORLD: KlangKuenstler All Night Long
+LOCATION:The Forum\, Los Angeles\, US
+URL:https://ra.co/events/2452834
+DESCRIPTION:Status: confirmed · Tickets: https://ra.co/events/2452834 · via KK Fan Hub (unofficial)
+END:VEVENT
+BEGIN:VEVENT
+UID:ra-2513550@kk-fanhub
+DTSTAMP:20260919T000000Z
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260920
+SUMMARY:KlangKuenstler — The Grid presents: OUTWORLD Klangkuenstler All Night Long
+LOCATION:Arca\, Sao Paulo\, BR
+URL:https://ra.co/events/2513550
+DESCRIPTION:Status: confirmed · Tickets: https://ra.co/events/2513550 · via KK Fan Hub (unofficial)
+END:VEVENT
+BEGIN:VEVENT
+UID:ra-2455657@kk-fanhub
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260905
+DTEND;VALUE=DATE:20260906
+SUMMARY:KlangKuenstler — The Grid Santiago: OUTWORLD\, KlangKuenstler All Night Long
+LOCATION:Espacio Riesco Expo Centre\, Santiago\, CL
+URL:https://ra.co/events/2455657
+DESCRIPTION:Status: confirmed · Tickets: https://ra.co/events/2455657 · via KK Fan Hub (unofficial)
+END:VEVENT
+BEGIN:VEVENT
+UID:ra-2315758@kk-fanhub
+DTSTAMP:20260828T000000Z
+DTSTART;VALUE=DATE:20260828
+DTEND;VALUE=DATE:20260829
+SUMMARY:KlangKuenstler — Unreal Stage @Nibirii Festival
+LOCATION:Dürener Badesee\, Cologne\, DE
+URL:https://ra.co/events/2315758
+DESCRIPTION:Status: confirmed · Tickets: https://ra.co/events/2315758 · via KK Fan Hub (unofficial)
+END:VEVENT
+BEGIN:VEVENT
+UID:ra-2456768@kk-fanhub
+DTSTAMP:20260822T000000Z
+DTSTART;VALUE=DATE:20260822
+DTEND;VALUE=DATE:20260823
+SUMMARY:KlangKuenstler — KlangKuenstler
+LOCATION:UNSW Roundhouse\, Sydney\, AU
+URL:https://ra.co/events/2456768
+DESCRIPTION:Status: confirmed · Tickets: https://ra.co/events/2456768 · via KK Fan Hub (unofficial)
+END:VEVENT
+BEGIN:VEVENT
+UID:ra-2456767@kk-fanhub
+DTSTAMP:20260821T000000Z
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260822
+SUMMARY:KlangKuenstler — KlangKuenstler
+LOCATION:The Timber Yard\, Melbourne\, AU
+URL:https://ra.co/events/2456767
+DESCRIPTION:Status: confirmed · Tickets: https://ra.co/events/2456767 · via KK Fan Hub (unofficial)
+END:VEVENT
+BEGIN:VEVENT
+UID:ra-2473516@kk-fanhub
+DTSTAMP:20260815T000000Z
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20260816
+SUMMARY:KlangKuenstler — WITH LOVE FESTIVAL presents KlangKuenstler
+LOCATION:Afrobar\, Catania\, IT
+URL:https://ra.co/events/2473516
+DESCRIPTION:Status: confirmed · Tickets: https://ra.co/events/2473516 · via KK Fan Hub (unofficial)
+END:VEVENT
+BEGIN:VEVENT
+UID:ra-2240827@kk-fanhub
+DTSTAMP:20260814T000000Z
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260815
+SUMMARY:KlangKuenstler — Echelon Festival 2026
+LOCATION:US-Kaserne Bad Aibling\, Bad Aibling\, DE
+URL:https://ra.co/events/2240827
+DESCRIPTION:Status: confirmed · Tickets: https://ra.co/events/2240827 · via KK Fan Hub (unofficial)
+END:VEVENT
+END:VCALENDAR

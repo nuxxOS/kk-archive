@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Logo Lab — KK Fan Hub</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap">
+<style>
+  :root {
+    --ground:#040d0b; --panel:rgba(7,20,17,.72); --line:rgba(170,240,220,.1);
+    --ink:#edf6f2; --ink2:#adc2ba; --ink3:#7a9187; --lime:#7ceedd;
+  }
+  * { box-sizing:border-box; margin:0; }
+  body {
+    font-family:Inter,sans-serif; color:var(--ink); min-height:100vh; padding:56px 40px;
+    background:
+      radial-gradient(60% 42% at 50% 0%, rgba(64,190,160,.1) 0%, transparent 62%),
+      linear-gradient(180deg,#081512 0%, var(--ground) 55%);
+  }
+  h1 { font-weight:700; text-transform:uppercase; letter-spacing:.06em; font-size:32px; margin-bottom:8px; }
+  .sub { color:var(--ink3); font-size:13px; margin-bottom:48px; max-width:60ch; }
+  .concept { max-width:1060px; margin:0 auto 40px; background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:28px 32px; }
+  .concept h2 { font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:.24em; text-transform:uppercase; color:var(--lime); margin-bottom:6px; }
+  .concept p { font-size:12.5px; color:var(--ink3); max-width:70ch; margin-bottom:22px; }
+  .row { display:flex; gap:28px; align-items:center; flex-wrap:wrap; }
+  .cell { display:flex; flex-direction:column; gap:10px; align-items:center; }
+  .cell span { font-family:'JetBrains Mono',monospace; font-size:9px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink3); }
+  .box { display:flex; align-items:center; justify-content:center; background:#030907; border:1px solid var(--line); border-radius:10px; }
+  .box.lg { width:170px; height:130px; }
+  .box.sm { width:64px; height:64px; }
+  .box.fav { width:34px; height:34px; border-radius:8px; }
+  .lockup { display:flex; align-items:center; gap:14px; padding:0 24px; height:64px; background:#030907; border:1px solid var(--line); border-radius:10px; }
+  .lockup b { font-weight:700; text-transform:uppercase; letter-spacing:.1em; font-size:15px; }
+  .lockup i { font-family:'JetBrains Mono',monospace; font-style:normal; font-size:8.5px; letter-spacing:.3em; text-transform:uppercase; color:var(--ink3); display:block; margin-top:3px; }
+  .gp { font-family:'JetBrains Mono',monospace; font-size:10px; line-height:1.6; color:var(--ink2); background:#030907; border:1px solid var(--line); border-radius:8px; padding:10px 14px; margin-top:18px; max-width:92ch; }
+  .gp::before { content:"GEN PROMPT — "; color:var(--lime); letter-spacing:.18em; }
+</style>
+</head>
+<body>
+  <h1>Logo Lab</h1>
+  <p class="sub">Five directions, all deliberately distinct from Outworld's metal-spike mark (that's the trademark line we never cross). Each shown large, small, favicon-size, and in a sidebar lockup.</p>
+
+  <!-- A: ORBIT -->
+  <div class="concept">
+    <h2>A — Orbit</h2>
+    <p>A body in orbit around a brighter core: the fan hub orbiting the artist. Space-native like his world, but generic-space, not Outworld-specific. Works at any size, instantly readable as favicon.</p>
+    <div class="row">
+      <div class="cell"><div class="box lg">
+        <svg width="110" height="90" viewBox="0 0 110 90">
+          <ellipse cx="55" cy="45" rx="46" ry="17" transform="rotate(-16 55 45)" fill="none" stroke="#7ceedd" stroke-width="2" opacity=".55"/>
+          <circle cx="55" cy="45" r="13" fill="#7ceedd"/>
+          <circle cx="55" cy="45" r="13" fill="none" stroke="#dcfff6" stroke-width="1.5" opacity=".5"/>
+          <circle cx="97" cy="31" r="4.5" fill="#dcfff6"/>
+        </svg>
+      </div><span>large</span></div>
+      <div class="cell"><div class="box sm">
+        <svg width="44" height="36" viewBox="0 0 110 90"><ellipse cx="55" cy="45" rx="46" ry="17" transform="rotate(-16 55 45)" fill="none" stroke="#7ceedd" stroke-width="4" opacity=".55"/><circle cx="55" cy="45" r="15" fill="#7ceedd"/><circle cx="97" cy="31" r="7" fill="#dcfff6"/></svg>
+      </div><span>small</span></div>
+      <div class="cell"><div class="box fav">
+        <svg width="24" height="20" viewBox="0 0 110 90"><ellipse cx="55" cy="45" rx="46" ry="17" transform="rotate(-16 55 45)" fill="none" stroke="#7ceedd" stroke-width="6" opacity=".6"/><circle cx="55" cy="45" r="17" fill="#7ceedd"/><circle cx="97" cy="31" r="9" fill="#dcfff6"/></svg>
+      </div><span>favicon</span></div>
+      <div class="cell"><div class="lockup">
+        <svg width="34" height="28" viewBox="0 0 110 90"><ellipse cx="55" cy="45" rx="46" ry="17" transform="rotate(-16 55 45)" fill="none" stroke="#7ceedd" stroke-width="4" opacity=".55"/><circle cx="55" cy="45" r="15" fill="#7ceedd"/><circle cx="97" cy="31" r="7" fill="#dcfff6"/></svg>
+        <div><b>KlangKuenstler</b><i>Unofficial Fan Hub</i></div>
+      </div><span>sidebar lockup</span></div>
+    </div>
+  </div>
+
+  <!-- B: SIGNAL KK -->
+  <div class="concept">
+    <h2>B — Signal KK</h2>
+    <p>The KK monogram drawn in broken segments, like an interrupted signal or strobe. Ties to the waveform/data identity of the site. The most "monogram" of the five.</p>
+    <div class="row">
+      <div class="cell"><div class="box lg">
+        <svg width="104" height="84" viewBox="0 0 104 84" fill="none" stroke="#7ceedd" stroke-width="9" stroke-linecap="round">
+          <path d="M14 10 V74" stroke-dasharray="16 8"/>
+          <path d="M44 12 L16 42 L44 72" stroke-dasharray="14 8"/>
+          <path d="M64 10 V74" stroke-dasharray="16 8"/>
+          <path d="M94 12 L66 42 L94 72" stroke-dasharray="14 8"/>
+        </svg>
+      </div><span>large</span></div>
+      <div class="cell"><div class="box sm">
+        <svg width="42" height="34" viewBox="0 0 104 84" fill="none" stroke="#7ceedd" stroke-width="11" stroke-linecap="round"><path d="M14 10 V74" stroke-dasharray="16 8"/><path d="M44 12 L16 42 L44 72" stroke-dasharray="14 8"/><path d="M64 10 V74" stroke-dasharray="16 8"/><path d="M94 12 L66 42 L94 72" stroke-dasharray="14 8"/></svg>
+      </div><span>small</span></div>
+      <div class="cell"><div class="box fav">
+        <svg width="22" height="18" viewBox="0 0 104 84" fill="none" stroke="#7ceedd" stroke-width="14" stroke-linecap="round"><path d="M14 10 V74"/><path d="M44 12 L16 42 L44 72"/><path d="M64 10 V74"/><path d="M94 12 L66 42 L94 72"/></svg>
+      </div><span>favicon</span></div>
+      <div class="cell"><div class="lockup">
+        <svg width="32" height="26" viewBox="0 0 104 84" fill="none" stroke="#7ceedd" stroke-width="11" stroke-linecap="round"><path d="M14 10 V74" stroke-dasharray="16 8"/><path d="M44 12 L16 42 L44 72" stroke-dasharray="14 8"/><path d="M64 10 V74" stroke-dasharray="16 8"/><path d="M94 12 L66 42 L94 72" stroke-dasharray="14 8"/></svg>
+        <div><b>KlangKuenstler</b><i>Unofficial Fan Hub</i></div>
+      </div><span>sidebar lockup</span></div>
+    </div>
+  </div>
+
+  <!-- C: PULSE -->
+  <div class="concept">
+    <h2>C — Pulse</h2>
+    <p>The globe's own pulse-ring visual promoted to logo: a core with expanding rings. It's literally the site's animation language frozen as a mark — the most "native" option. Could subtly animate in the sidebar.</p>
+    <div class="row">
+      <div class="cell"><div class="box lg">
+        <svg width="96" height="96" viewBox="0 0 96 96" fill="none">
+          <circle cx="48" cy="48" r="9" fill="#7ceedd"/>
+          <circle cx="48" cy="48" r="20" stroke="#7ceedd" stroke-width="2.5" opacity=".65"/>
+          <circle cx="48" cy="48" r="32" stroke="#7ceedd" stroke-width="2" opacity=".35"/>
+          <circle cx="48" cy="48" r="44" stroke="#7ceedd" stroke-width="1.5" opacity=".15"/>
+        </svg>
+      </div><span>large</span></div>
+      <div class="cell"><div class="box sm">
+        <svg width="40" height="40" viewBox="0 0 96 96" fill="none"><circle cx="48" cy="48" r="11" fill="#7ceedd"/><circle cx="48" cy="48" r="24" stroke="#7ceedd" stroke-width="4" opacity=".6"/><circle cx="48" cy="48" r="40" stroke="#7ceedd" stroke-width="3" opacity=".25"/></svg>
+      </div><span>small</span></div>
+      <div class="cell"><div class="box fav">
+        <svg width="22" height="22" viewBox="0 0 96 96" fill="none"><circle cx="48" cy="48" r="14" fill="#7ceedd"/><circle cx="48" cy="48" r="30" stroke="#7ceedd" stroke-width="6" opacity=".55"/><circle cx="48" cy="48" r="44" stroke="#7ceedd" stroke-width="4" opacity=".22"/></svg>
+      </div><span>favicon</span></div>
+      <div class="cell"><div class="lockup">
+        <svg width="30" height="30" viewBox="0 0 96 96" fill="none"><circle cx="48" cy="48" r="11" fill="#7ceedd"/><circle cx="48" cy="48" r="24" stroke="#7ceedd" stroke-width="4" opacity=".6"/><circle cx="48" cy="48" r="40" stroke="#7ceedd" stroke-width="3" opacity=".25"/></svg>
+        <div><b>KlangKuenstler</b><i>Unofficial Fan Hub</i></div>
+      </div><span>sidebar lockup</span></div>
+    </div>
+  </div>
+
+  <!-- D: ARCHIVE KEY -->
+  <div class="concept">
+    <h2>D — Archive Tag</h2>
+    <p>Mono "KK" inside a bracket-cornered frame with a cursor underscore — the terminal/archive read. Says "database, meticulously kept" more than "rave". Quietest option, ages well.</p>
+    <div class="row">
+      <div class="cell"><div class="box lg">
+        <svg width="120" height="86" viewBox="0 0 120 86" fill="none">
+          <path d="M14 4 H4 V18 M106 4 h10 v14 M14 82 H4 V68 M106 82 h10 V68" stroke="#7ceedd" stroke-width="3"/>
+          <text x="60" y="55" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="40" fill="#edf6f2" letter-spacing="2">KK</text>
+          <rect x="88" y="48" width="14" height="5" fill="#7ceedd"/>
+        </svg>
+      </div><span>large</span></div>
+      <div class="cell"><div class="box sm">
+        <svg width="48" height="35" viewBox="0 0 120 86" fill="none"><path d="M14 4 H4 V18 M106 4 h10 v14 M14 82 H4 V68 M106 82 h10 V68" stroke="#7ceedd" stroke-width="5"/><text x="60" y="58" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="44" fill="#edf6f2">KK</text></svg>
+      </div><span>small</span></div>
+      <div class="cell"><div class="box fav">
+        <svg width="26" height="19" viewBox="0 0 120 86" fill="none"><path d="M14 4 H4 V18 M106 4 h10 v14 M14 82 H4 V68 M106 82 h10 V68" stroke="#7ceedd" stroke-width="7"/><text x="60" y="60" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="50" fill="#edf6f2">KK</text></svg>
+      </div><span>favicon</span></div>
+      <div class="cell"><div class="lockup">
+        <svg width="38" height="28" viewBox="0 0 120 86" fill="none"><path d="M14 4 H4 V18 M106 4 h10 v14 M14 82 H4 V68 M106 82 h10 V68" stroke="#7ceedd" stroke-width="5"/><text x="60" y="58" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="44" fill="#edf6f2">KK</text></svg>
+        <div><b>KlangKuenstler</b><i>Unofficial Fan Hub</i></div>
+      </div><span>sidebar lockup</span></div>
+    </div>
+  </div>
+
+  <!-- E: WAVEFORM K -->
+  <div class="concept">
+    <h2>E — Waveform K</h2>
+    <p>A "K" whose diagonal arms are the site's energy waveform — the Set DNA visual fused with the monogram. The most unique to this project; slightly busier at tiny sizes.</p>
+    <div class="row">
+      <div class="cell"><div class="box lg">
+        <svg width="104" height="88" viewBox="0 0 104 88" fill="none">
+          <path d="M16 8 V80" stroke="#edf6f2" stroke-width="10" stroke-linecap="round"/>
+          <g stroke="#7ceedd" stroke-width="5" stroke-linecap="round">
+            <path d="M34 38 v-8"/><path d="M46 32 v-14"/><path d="M58 26 v-16"/><path d="M70 20 v-11"/><path d="M82 15 v-7"/>
+            <path d="M34 50 v8"/><path d="M46 56 v14"/><path d="M58 62 v16"/><path d="M70 68 v11"/><path d="M82 73 v7"/>
+          </g>
+        </svg>
+      </div><span>large</span></div>
+      <div class="cell"><div class="box sm">
+        <svg width="42" height="36" viewBox="0 0 104 88" fill="none"><path d="M16 8 V80" stroke="#edf6f2" stroke-width="13" stroke-linecap="round"/><g stroke="#7ceedd" stroke-width="8" stroke-linecap="round"><path d="M36 38 v-10"/><path d="M52 30 v-16"/><path d="M68 22 v-12"/><path d="M36 50 v10"/><path d="M52 58 v16"/><path d="M68 66 v12"/></g></svg>
+      </div><span>small</span></div>
+      <div class="cell"><div class="box fav">
+        <svg width="23" height="20" viewBox="0 0 104 88" fill="none"><path d="M16 8 V80" stroke="#edf6f2" stroke-width="16" stroke-linecap="round"/><g stroke="#7ceedd" stroke-width="11" stroke-linecap="round"><path d="M40 38 v-14"/><path d="M62 26 v-16"/><path d="M40 50 v14"/><path d="M62 62 v16"/></g></svg>
+      </div><span>favicon</span></div>
+      <div class="cell"><div class="lockup">
+        <svg width="32" height="28" viewBox="0 0 104 88" fill="none"><path d="M16 8 V80" stroke="#edf6f2" stroke-width="13" stroke-linecap="round"/><g stroke="#7ceedd" stroke-width="8" stroke-linecap="round"><path d="M36 38 v-10"/><path d="M52 30 v-16"/><path d="M68 22 v-12"/><path d="M36 50 v10"/><path d="M52 58 v16"/><path d="M68 66 v12"/></g></svg>
+        <div><b>KlangKuenstler</b><i>Unofficial Fan Hub</i></div>
+      </div><span>sidebar lockup</span></div>
+    </div>
+  </div>
+
+  <!-- ==================== DIE WELT BRENNT DIRECTION ==================== -->
+  <h1 style="margin-top:64px">Die Welt Brennt</h1>
+  <p class="sub">The burning world — his anthem as the mark. Shown in cold teal fire (stays in the site's system) and one ember variant for comparison. All original glyphs, no single-artwork copied.</p>
+
+  <!-- F: BURNING PLANET -->
+  <div class="concept">
+    <h2>F — Burning World (cold fire)</h2>
+    <p>A planet alight: solid world, three flame tongues. Teal keeps it in the site system — the world burns cold, which reads more "his universe" than literal fire.</p>
+    <div class="row">
+      <div class="cell"><div class="box lg">
+        <svg width="100" height="100" viewBox="0 0 96 96" fill="none">
+          <g fill="#7ceedd">
+            <path d="M48 6 C40 18 32 26 34 38 C35.5 46 41 51 48 52 C44 45 44 40 47 35 C53 42 60 40 61 31 C62 22 54 16 48 6 Z"/>
+            <path d="M63 26 C66 31 70 33 69 40 C68.4 44 65 47 61 47 C63.5 43 63 40 61.5 37 C64 36 64 31 63 26 Z"/>
+          </g>
+          <circle cx="48" cy="63" r="25" fill="#0c1d18"/>
+          <circle cx="48" cy="63" r="25" fill="none" stroke="#7ceedd" stroke-width="2.2" opacity=".9"/>
+          <path d="M30 48 a25 25 0 0 0 -4 8" fill="none" stroke="#dcfff6" stroke-width="1.6" opacity=".5"/>
+        </svg>
+      </div><span>large</span></div>
+      <div class="cell"><div class="box sm">
+        <svg width="42" height="42" viewBox="0 0 96 96" fill="none"><g fill="#7ceedd"><path d="M48 6 C40 18 32 26 34 38 C35.5 46 41 51 48 52 C44 45 44 40 47 35 C53 42 60 40 61 31 C62 22 54 16 48 6 Z"/><path d="M63 26 C66 31 70 33 69 40 C68.4 44 65 47 61 47 C63.5 43 63 40 61.5 37 C64 36 64 31 63 26 Z"/></g><circle cx="48" cy="63" r="25" fill="#7ceedd"/></svg>
+      </div><span>small</span></div>
+      <div class="cell"><div class="box fav">
+        <svg width="24" height="24" viewBox="0 0 96 96" fill="none"><g fill="#7ceedd"><path d="M48 6 C40 18 32 26 34 38 C35.5 46 41 51 48 52 C44 45 44 40 47 35 C53 42 60 40 61 31 C62 22 54 16 48 6 Z"/><path d="M63 26 C66 31 70 33 69 40 C68.4 44 65 47 61 47 C63.5 43 63 40 61.5 37 C64 36 64 31 63 26 Z"/></g><circle cx="48" cy="63" r="25" fill="#0c1d18" stroke="#7ceedd" stroke-width="4"/></svg>
+      </div><span>favicon</span></div>
+      <div class="cell"><div class="lockup">
+        <svg width="32" height="32" viewBox="0 0 96 96" fill="none"><g fill="#7ceedd"><path d="M48 6 C40 18 32 26 34 38 C35.5 46 41 51 48 52 C44 45 44 40 47 35 C53 42 60 40 61 31 C62 22 54 16 48 6 Z"/><path d="M63 26 C66 31 70 33 69 40 C68.4 44 65 47 61 47 C63.5 43 63 40 61.5 37 C64 36 64 31 63 26 Z"/></g><circle cx="48" cy="63" r="25" fill="#7ceedd"/></svg>
+        <div><b>KlangKuenstler</b><i>Unofficial Fan Hub</i></div>
+      </div><span>sidebar lockup</span></div>
+    </div>
+  </div>
+
+  <!-- G: EMBER VARIANT -->
+  <div class="concept">
+    <h2>G — Burning World (ember)</h2>
+    <p>Same glyph, real fire: ember gradient flames over a dark world with a glowing rim. Breaks the mono-teal system on purpose — the logo becomes the only warm thing on the site.</p>
+    <div class="row">
+      <div class="cell"><div class="box lg">
+        <svg width="100" height="100" viewBox="0 0 96 96" fill="none">
+          <defs>
+            <linearGradient id="fire" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0" stop-color="#ff5c28"/><stop offset=".6" stop-color="#ffb02e"/><stop offset="1" stop-color="#ffe8a3"/>
+            </linearGradient>
+          </defs>
+          <g fill="url(#fire)">
+            <path d="M48 6 C40 18 32 26 34 38 C35.5 46 41 51 48 52 C44 45 44 40 47 35 C53 42 60 40 61 31 C62 22 54 16 48 6 Z"/>
+            <path d="M63 26 C66 31 70 33 69 40 C68.4 44 65 47 61 47 C63.5 43 63 40 61.5 37 C64 36 64 31 63 26 Z"/>
+          </g>
+          <circle cx="48" cy="63" r="25" fill="#13201c"/>
+          <circle cx="48" cy="63" r="25" fill="none" stroke="#ff7b3a" stroke-width="2" opacity=".8"/>
+          <ellipse cx="48" cy="63" rx="25" ry="9" fill="none" stroke="#ff9d5c" stroke-width="1.5" opacity=".4"/>
+        </svg>
+      </div><span>large</span></div>
+      <div class="cell"><div class="box sm">
+        <svg width="42" height="42" viewBox="0 0 96 96" fill="none"><g fill="#ffb02e"><path d="M48 6 C40 18 32 26 34 38 C35.5 46 41 51 48 52 C44 45 44 40 47 35 C53 42 60 40 61 31 C62 22 54 16 48 6 Z"/><path d="M63 26 C66 31 70 33 69 40 C68.4 44 65 47 61 47 C63.5 43 63 40 61.5 37 C64 36 64 31 63 26 Z"/></g><circle cx="48" cy="63" r="25" fill="#13201c" stroke="#ff7b3a" stroke-width="3"/></svg>
+      </div><span>small</span></div>
+      <div class="cell"><div class="box fav">
+        <svg width="24" height="24" viewBox="0 0 96 96" fill="none"><g fill="#ffb02e"><path d="M48 6 C40 18 32 26 34 38 C35.5 46 41 51 48 52 C44 45 44 40 47 35 C53 42 60 40 61 31 C62 22 54 16 48 6 Z"/><path d="M63 26 C66 31 70 33 69 40 C68.4 44 65 47 61 47 C63.5 43 63 40 61.5 37 C64 36 64 31 63 26 Z"/></g><circle cx="48" cy="63" r="25" fill="#13201c" stroke="#ff7b3a" stroke-width="4"/></svg>
+      </div><span>favicon</span></div>
+      <div class="cell"><div class="lockup">
+        <svg width="32" height="32" viewBox="0 0 96 96" fill="none"><g fill="#ffb02e"><path d="M48 6 C40 18 32 26 34 38 C35.5 46 41 51 48 52 C44 45 44 40 47 35 C53 42 60 40 61 31 C62 22 54 16 48 6 Z"/><path d="M63 26 C66 31 70 33 69 40 C68.4 44 65 47 61 47 C63.5 43 63 40 61.5 37 C64 36 64 31 63 26 Z"/></g><circle cx="48" cy="63" r="25" fill="#13201c" stroke="#ff7b3a" stroke-width="3"/></svg>
+        <div><b>KlangKuenstler</b><i>Unofficial Fan Hub</i></div>
+      </div><span>sidebar lockup</span></div>
+    </div>
+  </div>
+
+  <!-- H: FLAME NEGATIVE SPACE -->
+  <div class="concept">
+    <h2>H — Flame in the World</h2>
+    <p>Inverted: a solid teal world with a flame cut out of it as negative space. Quieter, sharper at small sizes, and the flame reads as a void consuming the planet — arguably the darkest interpretation of the title.</p>
+    <div class="row">
+      <div class="cell"><div class="box lg">
+        <svg width="100" height="100" viewBox="0 0 96 96" fill="none">
+          <path fill="#7ceedd" fill-rule="evenodd" d="M48 14 a34 34 0 1 0 0 68 a34 34 0 0 0 0-68 Z M52 26 C46 34 40 40 41 49 C41.7 55 45 59 50 60 C47.5 55.5 47.6 52 50 48.5 C54 53.5 59 52 59.6 45.5 C60.2 38.5 55 32 52 26 Z"/>
+        </svg>
+      </div><span>large</span></div>
+      <div class="cell"><div class="box sm">
+        <svg width="42" height="42" viewBox="0 0 96 96" fill="none"><path fill="#7ceedd" fill-rule="evenodd" d="M48 14 a34 34 0 1 0 0 68 a34 34 0 0 0 0-68 Z M52 26 C46 34 40 40 41 49 C41.7 55 45 59 50 60 C47.5 55.5 47.6 52 50 48.5 C54 53.5 59 52 59.6 45.5 C60.2 38.5 55 32 52 26 Z"/></svg>
+      </div><span>small</span></div>
+      <div class="cell"><div class="box fav">
+        <svg width="24" height="24" viewBox="0 0 96 96" fill="none"><path fill="#7ceedd" fill-rule="evenodd" d="M48 14 a34 34 0 1 0 0 68 a34 34 0 0 0 0-68 Z M52 26 C46 34 40 40 41 49 C41.7 55 45 59 50 60 C47.5 55.5 47.6 52 50 48.5 C54 53.5 59 52 59.6 45.5 C60.2 38.5 55 32 52 26 Z"/></svg>
+      </div><span>favicon</span></div>
+      <div class="cell"><div class="lockup">
+        <svg width="32" height="32" viewBox="0 0 96 96" fill="none"><path fill="#7ceedd" fill-rule="evenodd" d="M48 14 a34 34 0 1 0 0 68 a34 34 0 0 0 0-68 Z M52 26 C46 34 40 40 41 49 C41.7 55 45 59 50 60 C47.5 55.5 47.6 52 50 48.5 C54 53.5 59 52 59.6 45.5 C60.2 38.5 55 32 52 26 Z"/></svg>
+        <div><b>KlangKuenstler</b><i>Unofficial Fan Hub</i></div>
+      </div><span>sidebar lockup</span></div>
+    </div>
+  </div>
+  <!-- ==================== OUTWORLD / TRACK THEMES ==================== -->
+  <h1 style="margin-top:64px">Outworld / Track Themes</h1>
+  <p class="sub">Space-native directions pulled from his actual catalog — Dimension Null, Man on the Moon, Sonne Geht Auf, Rise of the Phoenix, Toter Schmetterling. Same rule as above: original glyphs, nothing traced from Outworld's spike mark or any cover art. Each card ends with a prompt for your design AI.</p>
+
+  <!-- I: NULL PLANET -->
+  <div class="concept">
+    <h2>I — Null Planet (Dimension Null)</h2>
+    <p>The null symbol ∅ read as a ringed planet: one circle, one orbit line striking through. "Dimension Null" and generic-space in a single stroke — the most reducible mark on this page, survives any size.</p>
+    <div class="row">
+      <div class="cell"><div class="box lg">
+        <svg width="96" height="96" viewBox="0 0 96 96" fill="none">
+          <circle cx="48" cy="48" r="27" fill="#0c1d18" stroke="#7ceedd" stroke-width="5"/>
+          <path d="M14 82 L82 14" stroke="#7ceedd" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="82" cy="14" r="4" fill="#dcfff6"/>
+        </svg>
+      </div><span>large</span></div>
+      <div class="cell"><div class="box sm">
+        <svg width="42" height="42" viewBox="0 0 96 96" fill="none"><circle cx="48" cy="48" r="27" fill="#0c1d18" stroke="#7ceedd" stroke-width="8"/><path d="M14 82 L82 14" stroke="#7ceedd" stroke-width="8" stroke-linecap="round"/></svg>
+      </div><span>small</span></div>
+      <div class="cell"><div class="box fav">
+        <svg width="24" height="24" viewBox="0 0 96 96" fill="none"><circle cx="48" cy="48" r="27" fill="#0c1d18" stroke="#7ceedd" stroke-width="10"/><path d="M14 82 L82 14" stroke="#7ceedd" stroke-width="10" stroke-linecap="round"/></svg>
+      </div><span>favicon</span></div>
+      <div class="cell"><div class="lockup">
+        <svg width="30" height="30" viewBox="0 0 96 96" fill="none"><circle cx="48" cy="48" r="27" fill="#0c1d18" stroke="#7ceedd" stroke-width="8"/><path d="M14 82 L82 14" stroke="#7ceedd" stroke-width="8" stroke-linecap="round"/></svg>
+        <div><b>KlangKuenstler</b><i>Unofficial Fan Hub</i></div>
+      </div><span>sidebar lockup</span></div>
+    </div>
+    <div class="gp">Minimal flat vector logo, the null symbol as a ringed planet: single pale-mint (#7ceedd) circle outline crossed by one straight diagonal orbit line with a small satellite dot at its tip, on deep teal-black (#040d0b), geometric, sharp, no text, no gradients</div>
+  </div>
+
+  <!-- J: MAN ON THE MOON -->
+  <div class="concept">
+    <h2>J — Man on the Moon</h2>
+    <p>A crescent with a single tiny figure-dot standing on the rim. Warmest story of the set — the lone fan on the moon looking back at the world. From his 2014 single.</p>
+    <div class="row">
+      <div class="cell"><div class="box lg">
+        <svg width="96" height="96" viewBox="0 0 96 96" fill="none">
+          <path fill="#7ceedd" fill-rule="evenodd" d="M48 16 A32 32 0 1 0 48 80 A32 32 0 1 0 48 16 Z M56 25 A23 23 0 1 1 56 71 A23 23 0 1 1 56 25 Z"/>
+          <circle cx="48" cy="10" r="4" fill="#dcfff6"/>
+        </svg>
+      </div><span>large</span></div>
+      <div class="cell"><div class="box sm">
+        <svg width="42" height="42" viewBox="0 0 96 96" fill="none"><path fill="#7ceedd" fill-rule="evenodd" d="M48 16 A32 32 0 1 0 48 80 A32 32 0 1 0 48 16 Z M56 25 A23 23 0 1 1 56 71 A23 23 0 1 1 56 25 Z"/><circle cx="48" cy="10" r="5.5" fill="#dcfff6"/></svg>
+      </div><span>small</span></div>
+      <div class="cell"><div class="box fav">
+        <svg width="24" height="24" viewBox="0 0 96 96" fill="none"><path fill="#7ceedd" fill-rule="evenodd" d="M48 16 A32 32 0 1 0 48 80 A32 32 0 1 0 48 16 Z M56 25 A23 23 0 1 1 56 71 A23 23 0 1 1 56 25 Z"/><circle cx="48" cy="10" r="7" fill="#dcfff6"/></svg>
+      </div><span>favicon</span></div>
+      <div class="cell"><div class="lockup">
+        <svg width="30" height="30" viewBox="0 0 96 96" fill="none"><path fill="#7ceedd" fill-rule="evenodd" d="M48 16 A32 32 0 1 0 48 80 A32 32 0 1 0 48 16 Z M56 25 A23 23 0 1 1 56 71 A23 23 0 1 1 56 25 Z"/><circle cx="48" cy="10" r="5.5" fill="#dcfff6"/></svg>
+        <div><b>KlangKuenstler</b><i>Unofficial Fan Hub</i></div>
+      </div><span>sidebar lockup</span></div>
+    </div>
+    <div class="gp">Minimal flat vector logo, pale-mint (#7ceedd) crescent moon with one tiny bright dot figure standing on its upper rim, lots of negative space, deep teal-black (#040d0b) background, geometric, lonely, no text</div>
+  </div>
+
+  <!-- K: SONNE GEHT AUF -->
+  <div class="concept">
+    <h2>K — Sonne Geht Auf</h2>
+    <p>Half-sun breaking a horizon line — his newest single (2025), and the most optimistic mark here: the archive as a new day. Rays drop away at favicon size, the half-disc alone still reads.</p>
+    <div class="row">
+      <div class="cell"><div class="box lg">
+        <svg width="100" height="90" viewBox="0 0 96 90" fill="none">
+          <path d="M28 62 A20 20 0 0 1 68 62 Z" fill="#7ceedd"/>
+          <path d="M10 62 H86" stroke="#7ceedd" stroke-width="3" opacity=".45"/>
+          <g stroke="#dcfff6" stroke-width="4" stroke-linecap="round" opacity=".85">
+            <path d="M48 22 V32"/><path d="M26 32 L32 38"/><path d="M70 32 L64 38"/>
+          </g>
+        </svg>
+      </div><span>large</span></div>
+      <div class="cell"><div class="box sm">
+        <svg width="44" height="40" viewBox="0 0 96 90" fill="none"><path d="M26 62 A22 22 0 0 1 70 62 Z" fill="#7ceedd"/><path d="M8 62 H88" stroke="#7ceedd" stroke-width="5" opacity=".45"/><path d="M48 20 V32" stroke="#dcfff6" stroke-width="6" stroke-linecap="round" opacity=".85"/></svg>
+      </div><span>small</span></div>
+      <div class="cell"><div class="box fav">
+        <svg width="25" height="22" viewBox="0 0 96 90" fill="none"><path d="M22 62 A26 26 0 0 1 74 62 Z" fill="#7ceedd"/><path d="M6 62 H90" stroke="#7ceedd" stroke-width="7" opacity=".5"/></svg>
+      </div><span>favicon</span></div>
+      <div class="cell"><div class="lockup">
+        <svg width="32" height="29" viewBox="0 0 96 90" fill="none"><path d="M26 62 A22 22 0 0 1 70 62 Z" fill="#7ceedd"/><path d="M8 62 H88" stroke="#7ceedd" stroke-width="5" opacity=".45"/><path d="M48 20 V32" stroke="#dcfff6" stroke-width="6" stroke-linecap="round" opacity=".85"/></svg>
+        <div><b>KlangKuenstler</b><i>Unofficial Fan Hub</i></div>
+      </div><span>sidebar lockup</span></div>
+    </div>
+    <div class="gp">Minimal flat vector logo, pale-mint (#7ceedd) half-sun rising over a thin horizon line with three short rays, geometric bauhaus style, deep teal-black (#040d0b) background, no text, no gradients</div>
+  </div>
+
+  <!-- L: PHOENIX COMET -->
+  <div class="concept">
+    <h2>L — Phoenix Comet (Rise of the Phoenix)</h2>
+    <p>A comet whose three fanned trails read as spread wings — phoenix reborn as a space object, rising toward the upper right. The most dynamic mark; trails thin out at small sizes.</p>
+    <div class="row">
+      <div class="cell"><div class="box lg">
+        <svg width="96" height="96" viewBox="0 0 96 96" fill="none">
+          <g stroke="#7ceedd" stroke-linecap="round">
+            <path d="M60 34 C48 40 38 50 26 68" stroke-width="5" opacity=".75"/>
+            <path d="M62 38 C54 50 50 60 46 76" stroke-width="4" opacity=".4"/>
+            <path d="M56 30 C42 32 30 38 16 48" stroke-width="4" opacity=".4"/>
+          </g>
+          <circle cx="66" cy="28" r="8" fill="#7ceedd"/>
+          <circle cx="66" cy="28" r="8" stroke="#dcfff6" stroke-width="1.5" opacity=".6" fill="none"/>
+        </svg>
+      </div><span>large</span></div>
+      <div class="cell"><div class="box sm">
+        <svg width="42" height="42" viewBox="0 0 96 96" fill="none"><g stroke="#7ceedd" stroke-linecap="round"><path d="M60 34 C48 40 38 50 26 68" stroke-width="8" opacity=".75"/><path d="M62 38 C54 50 50 60 46 76" stroke-width="6" opacity=".4"/><path d="M56 30 C42 32 30 38 16 48" stroke-width="6" opacity=".4"/></g><circle cx="66" cy="28" r="11" fill="#7ceedd"/></svg>
+      </div><span>small</span></div>
+      <div class="cell"><div class="box fav">
+        <svg width="24" height="24" viewBox="0 0 96 96" fill="none"><path d="M58 34 C46 42 34 54 22 72" stroke="#7ceedd" stroke-width="11" stroke-linecap="round" opacity=".7"/><circle cx="68" cy="26" r="14" fill="#7ceedd"/></svg>
+      </div><span>favicon</span></div>
+      <div class="cell"><div class="lockup">
+        <svg width="30" height="30" viewBox="0 0 96 96" fill="none"><g stroke="#7ceedd" stroke-linecap="round"><path d="M60 34 C48 40 38 50 26 68" stroke-width="8" opacity=".75"/><path d="M62 38 C54 50 50 60 46 76" stroke-width="6" opacity=".4"/><path d="M56 30 C42 32 30 38 16 48" stroke-width="6" opacity=".4"/></g><circle cx="66" cy="28" r="11" fill="#7ceedd"/></svg>
+        <div><b>KlangKuenstler</b><i>Unofficial Fan Hub</i></div>
+      </div><span>sidebar lockup</span></div>
+    </div>
+    <div class="gp">Minimal flat vector logo, a comet rising diagonally with three swept trail lines fanned like phoenix wings, pale mint (#7ceedd) on deep teal-black (#040d0b), geometric, momentum, no text, no flames, no gradients</div>
+  </div>
+
+  <!-- M: ORBIT BUTTERFLY -->
+  <div class="concept">
+    <h2>M — Orbit Butterfly (Toter Schmetterling)</h2>
+    <p>Butterfly built from two orbit ellipses around a body — one wing solid, one dashed and breaking up: the dead wing. Space language carrying the darkest track title. The strangest mark here, and the most his.</p>
+    <div class="row">
+      <div class="cell"><div class="box lg">
+        <svg width="96" height="96" viewBox="0 0 96 96" fill="none">
+          <path d="M48 28 V68" stroke="#edf6f2" stroke-width="6" stroke-linecap="round"/>
+          <path d="M48 30 L41 21 M48 30 L55 21" stroke="#edf6f2" stroke-width="2.5" opacity=".6" stroke-linecap="round"/>
+          <ellipse cx="31" cy="44" rx="17" ry="10" transform="rotate(-28 31 44)" stroke="#7ceedd" stroke-width="4"/>
+          <ellipse cx="65" cy="44" rx="17" ry="10" transform="rotate(28 65 44)" stroke="#7ceedd" stroke-width="4" stroke-dasharray="7 6" opacity=".8"/>
+          <circle cx="18" cy="34" r="3" fill="#dcfff6"/>
+        </svg>
+      </div><span>large</span></div>
+      <div class="cell"><div class="box sm">
+        <svg width="42" height="42" viewBox="0 0 96 96" fill="none"><path d="M48 26 V70" stroke="#edf6f2" stroke-width="9" stroke-linecap="round"/><ellipse cx="30" cy="44" rx="18" ry="11" transform="rotate(-28 30 44)" stroke="#7ceedd" stroke-width="6"/><ellipse cx="66" cy="44" rx="18" ry="11" transform="rotate(28 66 44)" stroke="#7ceedd" stroke-width="6" stroke-dasharray="9 7" opacity=".85"/></svg>
+      </div><span>small</span></div>
+      <div class="cell"><div class="box fav">
+        <svg width="24" height="24" viewBox="0 0 96 96" fill="none"><path d="M48 24 V72" stroke="#edf6f2" stroke-width="12" stroke-linecap="round"/><ellipse cx="29" cy="44" rx="19" ry="12" transform="rotate(-28 29 44)" stroke="#7ceedd" stroke-width="8"/><ellipse cx="67" cy="44" rx="19" ry="12" transform="rotate(28 67 44)" stroke="#7ceedd" stroke-width="8" opacity=".85"/></svg>
+      </div><span>favicon</span></div>
+      <div class="cell"><div class="lockup">
+        <svg width="30" height="30" viewBox="0 0 96 96" fill="none"><path d="M48 26 V70" stroke="#edf6f2" stroke-width="9" stroke-linecap="round"/><ellipse cx="30" cy="44" rx="18" ry="11" transform="rotate(-28 30 44)" stroke="#7ceedd" stroke-width="6"/><ellipse cx="66" cy="44" rx="18" ry="11" transform="rotate(28 66 44)" stroke="#7ceedd" stroke-width="6" stroke-dasharray="9 7" opacity=".85"/></svg>
+        <div><b>KlangKuenstler</b><i>Unofficial Fan Hub</i></div>
+      </div><span>sidebar lockup</span></div>
+    </div>
+    <div class="gp">Minimal flat vector logo, butterfly formed from two elliptical orbit rings as wings around a straight vertical body, right wing dashed and dissolving, pale mint (#7ceedd) line art on deep teal-black (#040d0b), one small satellite dot on the left orbit, no text</div>
+  </div>
+</body>
+</html>

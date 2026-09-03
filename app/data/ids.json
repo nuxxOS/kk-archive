@@ -1,0 +1,62 @@
+{
+  "_sample": true,
+  "_note": "SAMPLE DATA — the ID log. status lifecycle: unknown -> guess -> confirmed -> released",
+  "ids": [
+    {
+      "id": "id-001",
+      "eventLabel": "Awakenings ADE 2022",
+      "showId": "2022-10-01-sample-awakenings",
+      "timestamp": "47:32",
+      "clipUrl": "https://example.com/clip",
+      "status": "unknown",
+      "guess": "",
+      "confirmedTitle": "",
+      "confirmedArtist": "",
+      "releaseUrl": "",
+      "firstSpotted": "2026-08-28",
+      "note": "Peak-time roller, distinctive vocal stab. Most requested ID in the archive."
+    },
+    {
+      "id": "id-002",
+      "eventLabel": "Sample ADE Night 2025",
+      "showId": "2025-10-18-sample-ade",
+      "timestamp": "01:08:54",
+      "clipUrl": "https://example.com/clip",
+      "status": "guess",
+      "guess": "Sample Artist — Sample Title (unreleased)",
+      "confirmedTitle": "",
+      "confirmedArtist": "",
+      "releaseUrl": "",
+      "firstSpotted": "2026-08-30",
+      "note": "Two independent clips, melody matches an unreleased premiere from July."
+    },
+    {
+      "id": "id-003",
+      "eventLabel": "Awakenings Festival 2026",
+      "showId": "2026-05-30-awakenings",
+      "timestamp": "31:42",
+      "clipUrl": "https://example.com/clip",
+      "status": "confirmed",
+      "guess": "",
+      "confirmedTitle": "Sample Track Title",
+      "confirmedArtist": "Sample Artist",
+      "releaseUrl": "",
+      "firstSpotted": "2026-06-02",
+      "note": "Confirmed by label premiere announcement."
+    },
+    {
+      "id": "id-004",
+      "eventLabel": "Outworld × Rotterdam Rave 2025",
+      "showId": "2025-06-28-outworld-rotterdam",
+      "timestamp": "~peak",
+      "clipUrl": "https://example.com/clip",
+      "status": "released",
+      "guess": "",
+      "confirmedTitle": "Sample Released Track",
+      "confirmedArtist": "Sample Artist",
+      "releaseUrl": "https://example.com/beatport",
+      "firstSpotted": "2026-08-16",
+      "note": "Dropped on Beatport 2026-08-29 — spotted live two weeks before release."
+    }
+  ]
+}

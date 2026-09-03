@@ -1,0 +1,85 @@
+{
+  "_sample": true,
+  "_note": "SAMPLE DATA — recorded sets. dna.energy is a 0..1 curve (later produced by the analysis pipeline); tracklist statuses: confirmed | guess | unknown",
+  "sets": [
+    {
+      "slug": "sample-awakenings-2022",
+      "title": "Awakenings ADE 2022",
+      "venue": "Gashouder",
+      "city": "Amsterdam",
+      "date": "2022-10-01",
+      "durationSec": 5412,
+      "sourceUrl": "https://example.com/youtube",
+      "sourcePlatform": "YouTube",
+      "hasAnatomy": false,
+      "dna": {
+        "avgBpm": 150.1,
+        "bpmMin": 145.0,
+        "bpmMax": 155.5,
+        "trackCount": 24,
+        "transitionCount": 23,
+        "longestBlendSec": 41,
+        "unknownIdCount": 9,
+        "energy": [0.18, 0.22, 0.28, 0.31, 0.35, 0.42, 0.4, 0.46, 0.52, 0.58, 0.55, 0.61, 0.67, 0.72, 0.7, 0.76, 0.82, 0.85, 0.8, 0.74, 0.5, 0.38, 0.45, 0.58, 0.7, 0.79, 0.86, 0.9, 0.94, 0.91, 0.88, 0.92, 0.96, 0.93, 0.85, 0.78, 0.82, 0.87, 0.84, 0.76, 0.68, 0.72, 0.65, 0.55, 0.4, 0.52, 0.63, 0.71, 0.78, 0.83, 0.87, 0.9, 0.86, 0.8, 0.7, 0.6, 0.48, 0.36, 0.26]
+      },
+      "tracklist": [
+        { "n": 1, "start": "00:00", "title": "ID", "artist": "ID", "status": "unknown" },
+        { "n": 2, "start": "04:12", "title": "Sample Track A", "artist": "Sample Artist", "status": "confirmed" },
+        { "n": 3, "start": "07:58", "title": "ID", "artist": "ID", "status": "guess" },
+        { "n": 4, "start": "12:24", "title": "Sample Track B", "artist": "Sample Artist", "status": "confirmed" },
+        { "n": 5, "start": "18:36", "title": "ID", "artist": "ID", "status": "unknown" }
+      ]
+    },
+    {
+      "slug": "sample-ade-2025",
+      "title": "Sample ADE Night 2025",
+      "venue": "Gashouder",
+      "city": "Amsterdam",
+      "date": "2025-10-18",
+      "durationSec": 6138,
+      "sourceUrl": "https://example.com/youtube",
+      "sourcePlatform": "YouTube",
+      "hasAnatomy": false,
+      "dna": {
+        "avgBpm": 151.8,
+        "bpmMin": 147.0,
+        "bpmMax": 157.0,
+        "trackCount": 28,
+        "transitionCount": 27,
+        "longestBlendSec": 54,
+        "unknownIdCount": 12,
+        "energy": [0.15, 0.2, 0.26, 0.33, 0.3, 0.38, 0.45, 0.51, 0.48, 0.56, 0.62, 0.68, 0.74, 0.7, 0.65, 0.58, 0.44, 0.5, 0.62, 0.73, 0.8, 0.85, 0.82, 0.88, 0.92, 0.95, 0.9, 0.84, 0.87, 0.91, 0.94, 0.9, 0.83, 0.75, 0.6, 0.42, 0.55, 0.68, 0.77, 0.84, 0.89, 0.93, 0.96, 0.92, 0.87, 0.81, 0.73, 0.64, 0.52, 0.4, 0.3]
+      },
+      "tracklist": [
+        { "n": 1, "start": "00:00", "title": "ID", "artist": "ID", "status": "unknown" },
+        { "n": 2, "start": "03:44", "title": "Sample Track C", "artist": "Sample Artist", "status": "confirmed" },
+        { "n": 3, "start": "08:10", "title": "ID", "artist": "ID", "status": "unknown" }
+      ]
+    },
+    {
+      "slug": "sample-awakenings-2026",
+      "title": "Awakenings Festival 2026",
+      "venue": "Spaarnwoude",
+      "city": "Amsterdam",
+      "date": "2026-05-30",
+      "durationSec": 5510,
+      "sourceUrl": "https://example.com/youtube",
+      "sourcePlatform": "YouTube",
+      "hasAnatomy": false,
+      "dna": {
+        "avgBpm": 152.4,
+        "bpmMin": 148.0,
+        "bpmMax": 158.2,
+        "trackCount": 26,
+        "transitionCount": 25,
+        "longestBlendSec": 38,
+        "unknownIdCount": 7,
+        "energy": [0.2, 0.27, 0.34, 0.4, 0.47, 0.44, 0.52, 0.6, 0.66, 0.63, 0.7, 0.77, 0.83, 0.8, 0.86, 0.9, 0.87, 0.8, 0.66, 0.48, 0.58, 0.7, 0.8, 0.87, 0.92, 0.95, 0.91, 0.94, 0.97, 0.93, 0.88, 0.91, 0.85, 0.78, 0.7, 0.74, 0.67, 0.57, 0.45, 0.34]
+      },
+      "tracklist": [
+        { "n": 1, "start": "00:00", "title": "Sample Track D", "artist": "Sample Artist", "status": "confirmed" },
+        { "n": 2, "start": "05:02", "title": "ID", "artist": "ID", "status": "unknown" }
+      ]
+    }
+  ]
+}
