@@ -7,7 +7,7 @@
     "build": "nuxt build",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "sync": "node scripts/sync-shows.mjs && node scripts/build-ics.mjs && node scripts/post-new-shows.mjs"
+    "sync": "node scripts/sync-shows.mjs && node scripts/build-ics.mjs && node scripts/snapshot-social.mjs && node scripts/post-new-shows.mjs"
   },
   "dependencies": {
     "globe.gl": "^2.46.2",

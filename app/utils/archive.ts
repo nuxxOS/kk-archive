@@ -1,6 +1,7 @@
 import showsData from '~/data/shows.json'
 import idsData from '~/data/ids.json'
 import setsData from '~/data/sets.json'
+import releasesData from '~/data/releases.json'
 
 export interface Show {
   id: string
@@ -48,9 +49,11 @@ export interface SetEntry {
     transitionCount: number
     longestBlendSec: number
     unknownIdCount: number
-    energy: number[]
   }
-  tracklist: { n: number; start: string; title: string; artist: string; status: string }[]
+  /** low-res energy curve for cards; full analysis lives in public/data/sets/{slug}.json */
+  spark: number[]
+  /** pinned sets lead the catalog and the home feature slot */
+  pinned?: boolean
 }
 
 // static JSON — derive everything once at module load, no reactivity needed
@@ -65,21 +68,20 @@ export const sets = setsData.sets as SetEntry[]
 // launch flags — ID Hunter is parked until real ID sourcing exists
 export const FEATURES = { idHunter: false }
 
-// ids excluded: the ID Hunter surface is flagged off, its sample data is invisible
-export const isSample = showsData._sample || setsData._sample
-
 export const today = new Date().toISOString().slice(0, 10)
 
 export const upcomingShows = shows.filter((s) => s.date >= today).sort((a, b) => a.date.localeCompare(b.date))
 export const nextShow = upcomingShows[0] ?? null
 
-export const sortedSets = [...sets].sort((a, b) => b.date.localeCompare(a.date))
+export const sortedSets = [...sets].sort(
+  (a, b) => Number(b.pinned ?? false) - Number(a.pinned ?? false) || b.date.localeCompare(a.date),
+)
 
 export const stats = {
   sets: sets.length,
   shows: shows.length,
   countries: new Set(shows.map((s) => s.country).filter(Boolean)).size,
-  tracks: sets.reduce((acc, s) => acc + s.dna.trackCount, 0),
+  releases: releasesData.releases.length,
 }
 
 export function formatDuration(sec: number): string {

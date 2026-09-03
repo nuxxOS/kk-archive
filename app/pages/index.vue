@@ -14,11 +14,11 @@ const latestSet = sortedSets[0] ?? null
 
       <div class="hero-inner">
         <div class="hero-main">
-          <p class="label label-lime">Welcome to the unofficial</p>
-          <h1 class="display hero-title">Klang<wbr />Kuenstler</h1>
-          <p class="hero-tag display">The place for fans. By fans.</p>
+          <p class="label label-lime">The unofficial</p>
+          <h1 class="display hero-title">Klang<wbr />Kuenstler<br />Hub</h1>
+          <p class="hero-tag display">By the crowd. For the crowd.</p>
           <p class="hero-sub">
-            Everything about KlangKuenstler — sets, shows, IDs and the community. Collected,
+            Every show since 2012, every recorded set, the whole discography — collected,
             organized, obsessed over.
           </p>
           <div class="hero-actions">
@@ -42,8 +42,8 @@ const latestSet = sortedSets[0] ?? null
           <span class="hero-tile-label">Sets tracked</span>
         </div>
         <div class="glass hero-tile">
-          <span class="hero-tile-value mono">{{ stats.tracks }}</span>
-          <span class="hero-tile-label">Tracks logged</span>
+          <span class="hero-tile-value mono">{{ stats.releases }}</span>
+          <span class="hero-tile-label">Releases</span>
         </div>
         <div class="glass hero-tile">
           <span class="hero-tile-value mono">{{ stats.countries }}</span>
@@ -69,11 +69,11 @@ const latestSet = sortedSets[0] ?? null
 
         <section v-if="latestSet" class="glass panel">
           <div class="section-title">
-            <h2>Latest set analysis</h2>
+            <h2>Featured set</h2>
             <NuxtLink :to="`/sets/${latestSet.slug}`" class="view-all">Explore →</NuxtLink>
           </div>
           <NuxtLink :to="`/sets/${latestSet.slug}`" class="latest">
-            <EnergySpark :energy="latestSet.dna.energy" :height="110" />
+            <EnergySpark :energy="latestSet.spark" :height="110" />
             <p class="latest-title display">{{ latestSet.title }}</p>
             <div class="latest-meta mono">
               <span><b>{{ formatDuration(latestSet.durationSec) }}</b> duration</span>

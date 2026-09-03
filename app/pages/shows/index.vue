@@ -10,7 +10,7 @@ const visibleUpcoming = computed(() =>
 )
 const hiddenUpcomingCount = laterShows.length - UPCOMING_PREVIEW_COUNT
 
-useHead({ title: 'Shows — KK Fan Hub' })
+useHead({ title: 'Shows — KlangKuenstler Hub' })
 
 const groups: Record<string, typeof pastShows> = {}
 for (const show of pastShows) {

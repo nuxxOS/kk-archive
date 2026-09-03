@@ -27,11 +27,8 @@ watch(() => route.path, () => (menuOpen.value = false))
     <!-- sidebar (desktop) / topbar (mobile) -->
     <aside class="side" :class="{ 'is-open': menuOpen }">
       <NuxtLink to="/" class="side-brand">
-        <img src="/logo.svg" alt="Burning world — KlangKuenstler Fan Hub" class="side-logo" />
-        <span class="side-wordmark display">
-          <span class="wordmark-line"><span class="wordmark-cap">K</span>lang</span>
-          <span class="wordmark-line"><span class="wordmark-cap">K</span>uenstler</span>
-        </span>
+        <img src="/logo.svg" alt="Burning world — KlangKuenstler Hub" class="side-logo" />
+        <span class="side-wordmark mono">KK//HUB</span>
       </NuxtLink>
 
       <nav class="side-nav">
@@ -50,9 +47,9 @@ watch(() => route.path, () => (menuOpen.value = false))
       <div class="side-foot">
         <p class="label">Listen</p>
         <div class="side-listen mono">
-          <a href="https://soundcloud.com" target="_blank" rel="noopener">SoundCloud</a>
-          <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
-          <a href="https://open.spotify.com" target="_blank" rel="noopener">Spotify</a>
+          <a href="https://soundcloud.com/klangkuenstler" target="_blank" rel="noopener">SoundCloud</a>
+          <a href="https://www.youtube.com/channel/UCVhGY5dI7gD1uArjjkuNr_w" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://open.spotify.com/artist/6H77vD9YyhyxHBTkRpbMBk" target="_blank" rel="noopener">Spotify</a>
         </div>
         <p class="side-disclaimer">
           Fan made. Not affiliated with KlangKuenstler or Outworld.
@@ -61,12 +58,8 @@ watch(() => route.path, () => (menuOpen.value = false))
     </aside>
 
     <div class="hub-main">
-      <div v-if="isSample" class="sample-banner mono">
-        SAMPLE DATA — replace app/data/*.json with real research before launch
-      </div>
-
       <header class="topbar">
-        <NuxtLink to="/" class="topbar-brand display">KlangKuenstler</NuxtLink>
+        <NuxtLink to="/" class="topbar-brand display">KlangKuenstler Hub</NuxtLink>
         <button class="topbar-burger mono" aria-label="Menu" @click="menuOpen = !menuOpen">
           {{ menuOpen ? '✕' : '☰' }}
         </button>
@@ -93,7 +86,7 @@ watch(() => route.path, () => (menuOpen.value = false))
         </div>
         <div class="foot-base mono">
           <span>{{ stats.shows }} shows · {{ stats.countries }} countries · {{ stats.sets }} sets</span>
-          <span>built by <a href="https://josipz.dev" target="_blank" rel="noopener">josipz.dev</a> — developer &amp; DJ</span>
+          <span>made by someone in the crowd</span>
         </div>
       </footer>
     </div>
@@ -127,25 +120,11 @@ watch(() => route.path, () => (menuOpen.value = false))
   filter: drop-shadow(0 0 10px rgba(124, 238, 221, 0.55)) drop-shadow(0 0 26px rgba(124, 238, 221, 0.3));
 }
 .side-wordmark {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 56px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
   color: var(--ink);
   text-shadow: 0 0 16px rgba(124, 238, 221, 0.5), 0 0 40px rgba(124, 238, 221, 0.25);
-}
-.wordmark-line {
-  display: flex;
-  align-items: baseline;
-  font-size: 12px;
-  letter-spacing: 0.14em;
-  line-height: 1;
-}
-.wordmark-cap {
-  font-size: 27px;
-  line-height: 0.78;
-  letter-spacing: 0.02em;
-  margin-right: 1px;
 }
 
 .side-nav { display: flex; flex-direction: column; gap: 2px; }
@@ -185,17 +164,6 @@ watch(() => route.path, () => (menuOpen.value = false))
 
 /* ---------- main column ---------- */
 .hub-main { flex: 1; margin-left: 216px; min-width: 0; display: flex; flex-direction: column; }
-
-.sample-banner {
-  font-size: 9px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 6px 12px;
-  color: var(--warn);
-  background: var(--warn-bg);
-  border-bottom: 1px solid var(--warn-border);
-}
 
 .topbar { display: none; }
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-useHead({ title: 'World — KK Fan Hub' })
+useHead({ title: 'World — KlangKuenstler Hub' })
 
 </script>
 

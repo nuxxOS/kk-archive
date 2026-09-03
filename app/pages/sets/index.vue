@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-useHead({ title: 'Sets — KK Fan Hub' })
+useHead({ title: 'Sets — KlangKuenstler Hub' })
 </script>
 
 <template>

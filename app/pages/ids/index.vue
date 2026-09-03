@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-useHead({ title: 'ID Hunter — KK Fan Hub' })
+useHead({ title: 'ID Hunter — KlangKuenstler Hub' })
 
 const sortedIds = [...ids].sort((a, b) => b.firstSpotted.localeCompare(a.firstSpotted))
 

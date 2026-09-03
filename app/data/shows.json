@@ -3043,8 +3043,9 @@
       "country": "DE",
       "status": "confirmed",
       "ticketUrl": "https://ra.co/events/1682666",
-      "setRecorded": false,
-      "source": "ra"
+      "setRecorded": true,
+      "source": "ra",
+      "setSlug": "unreal-open-air-leipzig"
     },
     {
       "id": "ra-1728370",

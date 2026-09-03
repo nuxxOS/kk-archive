@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import releasesData from '~/data/releases.json'
 
-useHead({ title: 'Music — KK Fan Hub' })
+useHead({ title: 'Music — KlangKuenstler Hub' })
 
 export interface Release {
   id: string

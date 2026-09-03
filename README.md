@@ -1,13 +1,13 @@
 # KK Fan Hub
 
-Unofficial KlangKuenstler fan hub — shows, tour globe, discography, stats, sets w/ Set DNA, ID Hunter.
+Unofficial KlangKuenstler fan hub — shows, tour globe, discography, stats, analyzed sets w/ Set DNA. ID Hunter parked behind a flag.
 Theme matched to outworld-stadium.com (deep teal-black `#040d0b`, pale mint `#7ceedd`, glass, spaced grotesk).
 
 ## Run
 
 ```bash
 pnpm install    # pnpm only — npm 10.9.2 hits an arborist bug on this machine
-pnpm dev        # http://localhost:3002
+pnpm dev        # dev server (3000/3002 often taken locally — PORT=3010 works)
 pnpm generate   # static build for Vercel
 pnpm sync       # RA + Songkick + promoter watchlist → shows.json → .ics → Telegram post
 ```
@@ -34,9 +34,43 @@ Upcoming/All-time/Year filter, zoom buttons) · /music · /stats · /sets · /id
 - `scripts/sync-releases.mjs` — MusicBrainz discography (retries 503s)
 - `scripts/sync-covers.mjs` — Cover Art Archive front covers → public/covers/{id}.jpg + hasCover
   flag (run after sync-releases; all 41 have art as of 2026-09-03)
+- `scripts/snapshot-social.mjs` — daily audience snapshot into app/data/social.json, NO API keys:
+  Spotify monthly listeners (og:description via curl DEFAULT UA — browser UAs get an empty JS
+  shell), SoundCloud followers (page JSON, exact), Deezer fans (open API, exact), YouTube subs
+  (page JSON, hl=en, rounded). Idempotent per date; failures carry the last known value forward.
+  In the `pnpm sync` chain. /stats renders tiles + sparklines once ≥2 snapshots exist.
+  Future: backfill-social-wayback.mjs (Wayback CDX historical counts) for instant history.
 - `scripts/build-ics.mjs` — public/klangkuenstler-tour.ics
 - `scripts/post-new-shows.mjs` — Telegram channel poster (needs TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID)
 - `scripts/import-setlistfm.mjs` — optional now (RA history made it mostly redundant)
+
+## Sets — analysis data contract (librosa pipeline TARGET)
+
+The page machinery is DONE (2026-09-03) and runs on this contract — the Python pipeline just
+has to emit these two things per analyzed set:
+
+1. `public/data/sets/{slug}.json` — the heavy payload, fetched client-side by the set page:
+   `{ slug, durationSec, energy: number[] (RMS per ~10s window, 0..1 normalized),
+      bpm: number[] (same sampling), transitions: [{ time: seconds, type: BLEND|CUT|LOOP }],
+      tracklist: [{ n, start: "H:MM:SS", title, artist, status: confirmed|guess|unknown }] }`
+2. An entry appended to `app/data/sets.json` (light index): meta + `dna` summary numbers +
+   `spark` (the energy array, used by catalog cards).
+
+Components: `SetFingerprint.vue` (Three.js coil, flat/coil toggle, unroll intro, drag rotate;
+resamples energy to ≥540 pts so low-res input stays round; three resolves via globe.gl's dep)
+and `SetAnatomy.vue` (SVG energy/BPM/transitions/segments chart with hover readout).
+Headless-Chrome screenshots of WebGL need `--use-angle=swiftshader --enable-unsafe-swiftshader`
+(plain `--disable-gpu` kills the context).
+
+**REAL SETS LIVE (2026-09-03), samples deleted.** Four analyzed via analyzer/analyze.py
+(venv + librosa; audio gitignored): Outworld Secret Rave Berlin 2024 (PINNED, official SC),
+Boiler Room × Teletech 2022, HÖR Berlin 2020-12-25, Unreal × Open Air Leipzig 2023-07-22
+(linked to show ra-1682666). Analyzer lessons baked in: energy = dB scale w/ fixed 18dB window
+under p98 (linear percentile min-max slams fake zeros); BPM = per-frame octave fix BEFORE
+windowing, median aggregation; dna range = p5–p95. Tracklists imported from community data
+(1001tracklists via set79.com — fetchable, no Cloudflare) with confirmed/guess/unknown statuses;
+10 unknown IDs across sets = ID Hunter's future inventory. Ear-verification pass pending
+(check: secret rave dip @55:10, peak @10:00). Set `pinned: true` in sets.json to feature.
 
 ## Data notes
 

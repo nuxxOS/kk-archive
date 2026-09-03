@@ -8,11 +8,14 @@ defineProps<{ set: SetEntry }>()
   <NuxtLink :to="`/sets/${set.slug}`" class="glass is-link set-card">
     <!-- atmospheric thumb placeholder until real photography exists -->
     <div class="set-card-thumb">
-      <EnergySpark :energy="set.dna.energy" :height="52" />
+      <EnergySpark :energy="set.spark" :height="52" />
     </div>
 
     <div class="set-card-body">
-      <p class="set-card-title display">{{ set.title }}</p>
+      <p class="set-card-title display">
+        {{ set.title }}
+        <span v-if="set.pinned" class="set-card-pinned mono">Pinned</span>
+      </p>
       <p class="set-card-venue mono">{{ set.venue }} · {{ set.city }}</p>
       <div class="set-card-meta mono">
         <span>{{ formatDuration(set.durationSec) }}</span>
@@ -36,6 +39,19 @@ defineProps<{ set: SetEntry }>()
 .set-card-body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 6px; }
 
 .set-card-title { font-size: 17px; color: var(--ink); letter-spacing: 0.02em; }
+.set-card-pinned {
+  display: inline-block;
+  vertical-align: 3px;
+  margin-left: 6px;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--lime);
+  border: 1px solid var(--lime-border);
+  border-radius: 999px;
+  padding: 2px 7px;
+}
 .set-card-venue { font-size: 9.5px; color: var(--ink-3); letter-spacing: 0.08em; text-transform: uppercase; }
 
 .set-card-meta { display: flex; gap: 14px; margin-top: 8px; font-size: 10px; color: var(--ink-4); }

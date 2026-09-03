@@ -7,3 +7,6 @@ dist
 .DS_Store
 *.log
 *.bak
+analyzer/venv
+analyzer/audio
+analyzer/venv-shazam
