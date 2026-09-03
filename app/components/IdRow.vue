@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { TrackedId } from '~/composables/useArchive'
+import type { TrackedId } from '~/utils/archive'
 
 const props = defineProps<{ entry: TrackedId }>()
 

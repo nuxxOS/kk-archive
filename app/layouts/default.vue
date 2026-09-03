@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import { FEATURES } from '~/composables/useArchive'
+import { FEATURES } from '~/utils/archive'
 
-const { isSample, stats } = useArchive()
 
 const NAV_ITEMS = [
   { to: '/', label: 'Home' },

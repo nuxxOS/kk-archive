@@ -1,7 +1,8 @@
 <script setup lang="ts">
-const { sortedIds } = useArchive()
 
 useHead({ title: 'ID Hunter — KK Fan Hub' })
+
+const sortedIds = [...ids].sort((a, b) => b.firstSpotted.localeCompare(a.firstSpotted))
 
 const FILTERS = ['all', 'unknown', 'guess', 'confirmed', 'released'] as const
 const filter = ref<(typeof FILTERS)[number]>('all')

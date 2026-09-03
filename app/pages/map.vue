@@ -1,7 +1,6 @@
 <script setup lang="ts">
 useHead({ title: 'World — KK Fan Hub' })
 
-const { shows } = useArchive()
 </script>
 
 <template>

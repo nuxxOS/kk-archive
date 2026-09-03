@@ -1,7 +1,6 @@
 <script setup lang="ts">
 useHead({ title: 'Stats — KK Fan Hub' })
 
-const { shows } = useArchive()
 
 function tally<T>(items: T[], key: (t: T) => string) {
   const m = new Map<string, number>()

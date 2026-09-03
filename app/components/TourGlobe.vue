@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import citiesData from '~/data/cities.json'
-import { formatShowDate, type Show } from '~/composables/useArchive'
+import { formatShowDate, type Show } from '~/utils/archive'
 
 const props = withDefaults(
   defineProps<{
@@ -31,7 +31,6 @@ interface CityPoint {
 }
 
 const cities = citiesData.cities as Record<string, { lat: number; lng: number }>
-const today = new Date().toISOString().slice(0, 10)
 
 const byCity = props.shows.reduce<Record<string, Show[]>>((acc, s) => {
   if (s.city && cities[s.city]) (acc[s.city] ??= []).push(s)

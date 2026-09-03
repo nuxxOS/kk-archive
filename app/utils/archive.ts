@@ -56,41 +56,30 @@ export interface SetEntry {
 // static JSON — derive everything once at module load, no reactivity needed
 const rawShows = showsData.shows as Show[]
 // while sets are sample data, shows must not link into them
-const shows = setsData._sample
+export const shows = setsData._sample
   ? rawShows.map((s) => (s.setSlug || s.setRecorded ? { ...s, setSlug: undefined, setRecorded: false } : s))
   : rawShows
-const ids = idsData.ids as TrackedId[]
-const sets = setsData.sets as SetEntry[]
+export const ids = idsData.ids as TrackedId[]
+export const sets = setsData.sets as SetEntry[]
 
 // launch flags — ID Hunter is parked until real ID sourcing exists
 export const FEATURES = { idHunter: false }
 
 // ids excluded: the ID Hunter surface is flagged off, its sample data is invisible
-const isSample = showsData._sample || setsData._sample
+export const isSample = showsData._sample || setsData._sample
 
 export const today = new Date().toISOString().slice(0, 10)
 
-const upcomingShows = shows.filter((s) => s.date >= today).sort((a, b) => a.date.localeCompare(b.date))
-const pastShows = shows.filter((s) => s.date < today).sort((a, b) => b.date.localeCompare(a.date))
-const nextShow = upcomingShows[0] ?? null
+export const upcomingShows = shows.filter((s) => s.date >= today).sort((a, b) => a.date.localeCompare(b.date))
+export const nextShow = upcomingShows[0] ?? null
 
-const sortedSets = [...sets].sort((a, b) => b.date.localeCompare(a.date))
-const latestSet = sortedSets[0] ?? null
+export const sortedSets = [...sets].sort((a, b) => b.date.localeCompare(a.date))
 
-const sortedIds = [...ids].sort((a, b) => b.firstSpotted.localeCompare(a.firstSpotted))
-const openIds = sortedIds.filter((i) => i.status === 'unknown' || i.status === 'guess')
-
-const stats = {
+export const stats = {
   sets: sets.length,
   shows: shows.length,
   countries: new Set(shows.map((s) => s.country).filter(Boolean)).size,
-  idsTracked: ids.length,
-  idsOpen: openIds.length,
   tracks: sets.reduce((acc, s) => acc + s.dna.trackCount, 0),
-}
-
-export function useArchive() {
-  return { shows, ids, sets, isSample, upcomingShows, pastShows, nextShow, sortedSets, latestSet, sortedIds, openIds, stats }
 }
 
 export function formatDuration(sec: number): string {

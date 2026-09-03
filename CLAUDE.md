@@ -97,11 +97,19 @@ Each layer has one job. Do not skip layers or merge responsibilities.
 | Section | `components/ShowsList.vue` | Smart — consumes composables | Owns a slice of the UI |
 | Leaf | `components/ShowRow.vue` | Dumb — props in, emits out | No composable calls, no API calls |
 
-### Composables
+### Composables vs Utils
 
-- One composable = one noun (`useArchive`, `useShowFilters`)
+- The `use` prefix belongs on the exported FUNCTION, never on the filename. Files are
+  kebab-case nouns: `composables/show-filters.ts` exports `useShowFilters()`.
+- `composables/` + a `use` function is ONLY for real composables — functions that own
+  reactivity or lifecycle. Anything non-reactive is a util: plain module in `utils/`, no
+  accessor function, consts and helpers exported directly (see `utils/archive.ts`; Nuxt
+  auto-imports named exports from both dirs).
+- A shared module exports only what MULTIPLE consumers use. A derivation with a single
+  consumer is defined locally in that consumer, not exported.
+- Real composables: one composable = one noun (`useShowFilters`).
 - Under 60 lines = ideal. Over 200 = must split.
-- Logic lives in the composable, not in components.
+- Logic lives in the composable/module, not in components.
 
 ### Lifecycle Hooks
 

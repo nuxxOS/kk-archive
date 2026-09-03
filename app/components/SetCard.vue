@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { formatDuration, type SetEntry } from '~/composables/useArchive'
+import { formatDuration, type SetEntry } from '~/utils/archive'
 
 defineProps<{ set: SetEntry }>()
 </script>

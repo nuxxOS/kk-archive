@@ -1,6 +1,6 @@
 <script setup lang="ts">
-const { upcomingShows, pastShows, nextShow } = useArchive()
 
+const pastShows = shows.filter((s) => s.date < today).sort((a, b) => b.date.localeCompare(a.date))
 const laterShows = upcomingShows.slice(1)
 
 const UPCOMING_PREVIEW_COUNT = 6

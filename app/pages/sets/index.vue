@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const { sortedSets } = useArchive()
 
 useHead({ title: 'Sets — KK Fan Hub' })
 </script>

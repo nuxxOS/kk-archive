@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { formatShowDate, type Show } from '~/composables/useArchive'
+import { formatShowDate, type Show } from '~/utils/archive'
 
 const props = defineProps<{ show: Show }>()
 

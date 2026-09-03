@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { FEATURES, formatDuration } from '~/composables/useArchive'
+import { FEATURES, formatDuration } from '~/utils/archive'
 
 const route = useRoute()
-const { sets, ids } = useArchive()
 
 const set = computed(() => sets.find((s) => s.slug === route.params.slug))
 

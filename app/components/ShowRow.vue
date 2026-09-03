@@ -1,14 +1,16 @@
 <script setup lang="ts">
-import { formatShowDate, type Show } from '~/composables/useArchive'
+import { formatShowDate, today, type Show } from '~/utils/archive'
 
 const props = defineProps<{ show: Show; showYear?: boolean }>()
 
 const date = computed(() => formatShowDate(props.show.date))
+const isUpcoming = props.show.date >= today
 </script>
 
 <template>
   <div class="show-row">
     <div class="show-row-date">
+      <span class="show-row-weekday mono">{{ date.weekday }}</span>
       <span class="show-row-day display">{{ date.day }}</span>
       <span class="show-row-month mono">{{ date.month }}<template v-if="showYear"> '{{ date.year.slice(2) }}</template></span>
     </div>
@@ -19,9 +21,10 @@ const date = computed(() => formatShowDate(props.show.date))
     </div>
 
     <div class="show-row-side">
-      <span class="badge" :class="`badge-${show.status}`">{{ show.status }}</span>
+      <span v-if="show.setRecorded && !show.setSlug" class="show-row-rec mono" title="Set recorded">● rec</span>
+      <span v-if="show.status !== 'confirmed'" class="badge" :class="`badge-${show.status}`">{{ show.status }}</span>
       <a
-        v-if="show.ticketUrl"
+        v-if="show.ticketUrl && isUpcoming"
         :href="show.ticketUrl"
         target="_blank"
         rel="noopener"
@@ -45,7 +48,9 @@ const date = computed(() => formatShowDate(props.show.date))
 }
 
 .show-row-date { display: flex; flex-direction: column; min-width: 58px; }
+.show-row-weekday { font-size: 8.5px; letter-spacing: 0.2em; color: var(--ink-4); }
 .show-row-day { font-size: 26px; color: var(--ink); }
+.show-row-rec { font-size: 9px; letter-spacing: 0.1em; color: var(--lime-soft); white-space: nowrap; }
 .show-row-month { font-size: 9px; letter-spacing: 0.16em; color: var(--lime); text-transform: uppercase; margin-top: 2px; }
 
 .show-row-body { flex: 1; min-width: 0; }

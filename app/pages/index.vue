@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { formatDuration, formatShowDate } from '~/composables/useArchive'
+import { formatDuration, formatShowDate } from '~/utils/archive'
 
-const { shows, nextShow, latestSet, sortedSets, upcomingShows, stats } = useArchive()
 
 const nextShowDate = nextShow ? formatShowDate(nextShow.date) : null
+const latestSet = sortedSets[0] ?? null
 </script>
 
 <template>
